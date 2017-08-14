@@ -1,0 +1,156 @@
+﻿
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="Gaduo" />
+		<link rel="icon" href="assets/image/favicon.ico" />
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Gaduo's Resume</title>
+		<!-- InstanceEndEditable -->
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Custom styles for this template -->
+		<!--link href="../assets/css/jumbotron-narrow.css" rel="stylesheet" /-->
+		<style>
+		  .container {
+			max-width: 800px;
+		  }
+		</style>
+		<link href="assets/css/timeliner/timeliner-future.css" rel="stylesheet"/>
+		<link href="assets/css/vendor/venobox/venobox.css" rel="stylesheet"/>
+		<!-- InstanceBeginEditable name="head" -->
+		<!-- InstanceEndEditable -->
+	</head>
+	<body>
+		<div class="container bs-docs-container">	
+		<div class="header">
+			<ul class="nav nav-pills pull-right">
+			  <li><a href="/">Home</a></li>
+			  <li><a href="aboutMe">About Me</a></li>	
+			  <li><a href="assets/pdf/gaduo.resume.pdf">Donwload</a></li>		  
+			  <li><a href="contact">Contact</a></li>
+			</ul>
+			<h3 class="text-muted"><a href="index">Gaduo's Resume</a></h3>
+		</div>
+		<!-- InstanceBeginEditable name="EditRegion3" -->
+        
+		<div class="blog-header">
+	        <!-- <h2 class="blog-title"></h2> -->
+        	<!-- <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p> -->
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12 blog-main">
+				<div class="blog-post">
+					<p class="blog-post-meta pull-right"><a target="_blank" href="assets/doc/專題結案案報告書.pdf">報告書</a>|<a target="_blank" href="assets/doc/專題海報20111206.pdf">海報</a></p>
+					<h2 class="blog-post-title">邊做、邊說、邊記-隨身護理記錄輔助系統</h2>
+					<p class="blog-post-meta pull-right">指導教授：林紋正 組員：簡裕維、徐碩亨</p>
+                    <br />
+                    
+                    
+                    
+                    <h3>動機：</h3>
+                    <div class="well well-lg">    
+                    	<p>&nbsp; &nbsp; &nbsp; &nbsp; 我們訪問了年資超過6年的護理人員，了解他們的工作內容與負擔，發現護理記錄扮演著很重要的角色。護理記錄可清楚地記載病人得到了什麼照護以及目前的狀況，讓護理人員繁忙的工作內容得到有條理的記錄，並在任何情況下可調閱、瀏覽，所以護理人員除了照顧病人外，還需要花費額外的時間來登記護理記錄，並且幾乎是利用自己下班時間作業。
+                        </p>
+					</div>
+                    <h3>目的：</h3>
+                    <div class="well well-lg">    
+                    	<p>&nbsp; &nbsp; &nbsp; &nbsp; 我們希望開發一套<strong>隨身護理記錄輔助系統</strong>，幫助護理人員在照護病人完畢後，可以<strong>利用說話的方式</strong>記錄護理記錄，使得護理記錄具有<strong>完整性並節省記錄的時間</strong>。因為說話的方式通常比書寫或打字的速度來得快，而在編輯系統編寫護理記錄內容時，可聆聽原始音訊檔以確認其內容，使得記錄具有完整性、準確性，並且大幅節省實作護理記錄的時間。這麼一來還可以減少護理人員在執行護理照護時腦中的負荷，不怕遺忘前幾位病人的照護細節，能專心一意的應付各個狀況，也可以清楚地記錄為病人所做的一切照護，提升醫療品質。。
+                        </p>
+					</div>
+                    <h3>整體流程：</h3>
+                    <div class="well well-lg">    
+                        <p>
+                            &nbsp; &nbsp; &nbsp; &nbsp; 護理人員使用手持設備，將護理過程用錄音方式記錄，錄製完畢後將錄音檔上傳至伺服器端，再送至Google進行<strong>語音辨識</strong>。由於一段語音檔會有多筆的語音辨識結果，所以我們使用<strong>字典樹快速篩選出含有最多醫護詞彙的語音辨識結果</strong>，然後將辨識結果放到焦點記錄法的F、D、A、R、T各欄位中，並<strong>自動修正語音辨識的錯誤</strong>。我們使用<strong>Local Alignment演算法</strong>，從<strong>聲音層面</strong>比對辨識結果與醫護專用詞彙的相似性，若相似性高於臨界值便修正對應到的辨識結果。我們也提供相似分較數高的詞彙讓使用者在網頁編輯系統中編輯護理記錄時可以手動選擇更換詞彙。護理記錄編輯系統中有原音重現的功能，讓護理人員聆聽當時的錄音內容。系統會自動將原始音訊檔分割，將分割後的音訊檔片段對應到各句子，可達到不需要從頭聆聽的效益。護理人員聆聽並參考音訊檔內容做即時修正，不僅節省回想的時間，還讓醫護人員更準確的記錄所做的護理照護。
+                        </p>
+                        <img src="assets/image/NursingRecordSystem/flow_chart.png" class="img-rounded" width="100%" />
+                        <h4 class="text-center">圖一：系統整體流程</h4>
+					</div>
+                    <h3>方法：</h3>
+                    <div class="well well-lg">    
+                    	<p>&nbsp; &nbsp; &nbsp; &nbsp; 目前遇到最大的困難點在於沒有能力在短時間內開發一套醫護專業領域的語音辨識軟體，所以我們使用Google語音辨識系統，它在中文辨識與跨平台的自由性來說，比其他廠牌來的高，可以讓我們先將錄音檔儲存後，再上傳至雲端進行語音辨識。由於<strong>Google語音辨識系統對音訊檔案時間具有限制</strong>，所以我們利用<strong>大津法</strong>(Otsu’s Method)，實作二值化，區分出背景音與語音，自動找到幾個語句上的停頓點，將<strong>原音訊檔分割成多個子檔案</strong>。
+                        </p>    
+                    	<p>&nbsp; &nbsp; &nbsp; &nbsp; 本系統為了應付從不同來源接收到的護理記錄而使用平行化處理，提升系統效率。語音辨識的各項工作(接收/合併/分割音訊檔、語音辨識、快速篩選最佳的語音辨識結果、合併字串後儲存至資料庫)<strong>皆用</strong>平行化處理以減少處理時間。
+                        </p>
+                    	<p>&nbsp; &nbsp; &nbsp; &nbsp; 由於我們使用的並非醫護專業領域的語音辨識軟體，因此使用Local Alignment 演算法找出辨識結果中可能出現的護理記錄常用詞彙，以便更正語音辨識結果。我們準備了中、英文字典各一部，記錄著護理記錄中常用的中、英文詞彙。我們將語音辨識結果與一組護理常用詞彙轉換成音素(以國際音標表示)，再利用Dynamic Programming 方式計算兩組音標相似度，找出語音辨識結果與護理常用詞彙最相似的片段，此詞彙即為這段子字串的替換候選詞。聲符相似程度則依照”以最佳化及機率分佈判斷漢字聲符之研究”、”以母語輔助建立個人化辨識網路並應用於英文錯誤發音偵測之研究”兩篇研究論文，訂定中、英文各音素間的相似分數。
+                        </p>
+                    	<p>&nbsp; &nbsp; &nbsp; &nbsp; 由於我們使用的並非醫護專業領域的語音辨識軟體，因此使用Local Alignment 演算法找出辨識結果中可能出現的護理記錄常用詞彙，以便更正語音辨識結果。我們準備了中、英文字典各一部，記錄著護理記錄中常用的中、英文詞彙。我們將語音辨識結果與一組護理常用詞彙轉換成音素(以國際音標表示)，再利用Dynamic Programming 方式計算兩組音標相似度，找出語音辨識結果與護理常用詞彙最相似的片段，此詞彙即為這段子字串的替換候選詞。聲符相似程度則依照”以最佳化及機率分佈判斷漢字聲符之研究”、”以母語輔助建立個人化辨識網路並應用於英文錯誤發音偵測之研究”兩篇研究論文，訂定中、英文各音素間的相似分數。
+                        </p>
+                    	<p>&nbsp; &nbsp; &nbsp; &nbsp; 網頁式護理記錄編輯系統則使用Javascript Framework JQuery，AJAX技術開發，提供更好的互動性操作，以方便編輯。
+                        </p>
+					</div>
+                    <h3>結果：</h3>
+                    <div class="well well-lg">    
+                    	<p>&nbsp; &nbsp; &nbsp; &nbsp; 我們請二位護理人員測試系統。他們對我們的整體構思非常滿意，尤其利用語音輸入比起手寫來的輕鬆自在，且在編輯系統的語音重現功能，讓他們更加認同此系統可以提醒他們可能會忘記的細項。他們覺得如果語音辨識的部分可以更加準確，讓他們在修改時只需做一些增字、減字、或是修改幾個名詞的話，這一套系統是可以減少他們的負擔，會很想使用。
+                        </p>
+                        <h4 class="text-center">表一：語音辨識結果與原始正確內容之相似度</h4>
+                        <table class="table table-striped">
+                            <tr>
+                                <td class="text-center">受試者</td>
+                                <td class="text-center">未經過本系統後處理</td>
+                                <td class="text-center">經過本系統處理</td>                                                        
+                            </tr>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">0.464</td>
+                                <td class="text-center">0.524</td>                                                        
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">0.562</td>
+                                <td class="text-center">0.591</td>                                                        
+                            </tr>                    
+                        </table>
+                        <br />
+                        <img src="assets/image/NursingRecordSystem/android_app.png" class="img-rounded" width="100%" />    
+                        <img src="assets/image/NursingRecordSystem/android_app2.png" class="img-rounded" width="100%" />    
+                        <h4 class="text-center">圖二：手持裝置操作介面</h4>   
+					</div>             
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- InstanceEndEditable -->
+      	<div class="footer">
+			<p>&copy; Gaduo 2016</p>
+		</div>
+ 
+	</div> <!-- /container -->
+
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-56436126-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+	<script type="text/javascript" src="assets/js/jquery/2.1.1/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- InstanceBeginEditable name="EditRegion4" -->EditRegion4<!-- InstanceEndEditable -->
+	
+	
+  </body>
+<!-- InstanceEnd --></html>
