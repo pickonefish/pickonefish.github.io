@@ -1,41 +1,748 @@
+﻿
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="UTF-8">
-  <title>Ionic App</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
+<html lang="en"><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="author" content="Gaduo" />
+		<link rel="icon" href="assets/image/favicon.ico" />
+		<!-- InstanceBeginEditable name="doctitle" -->
+		<title>Gaduo's Resume</title>
+		<!-- InstanceEndEditable -->
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4e8ef7">
-  
-  <!-- cordova.js required for cordova apps -->
-  <script src="cordova.js"></script>
+		<!-- Custom styles for this template -->
+		<!--link href="../assets/css/jumbotron-narrow.css" rel="stylesheet" /-->
+		<style>
+		  .container {
+			max-width: 800px;
+		  }
+		</style>
+		<link href="assets/css/timeliner/timeliner-future.css" rel="stylesheet"/>
+		<link href="assets/css/vendor/venobox/venobox.css" rel="stylesheet"/>
+		<!-- InstanceBeginEditable name="head" -->
+		<style type="text/css">
+			.margin {				
+				margin: 0 0 10px 8px;
+			}
+			.color-grey {
+				color: grey
+			}
+		</style>
+		<!-- InstanceEndEditable -->
+	</head>
+	<body>
+		<div class="container bs-docs-container">	
+		<div class="header">
+			<ul class="nav nav-pills pull-right">
+			  <li><a href="/">Home</a></li>
+			  <li><a href="aboutMe">About Me</a></li>	
+			  <li><a href="assets/pdf/gaduo.resume.pdf">Donwload</a></li>		  
+			  <li><a href="contact">Contact</a></li>
+			</ul>
+			<h3 class="text-muted"><a href="index">Gaduo's Resume</a></h3>
+		</div>
+		<!-- InstanceBeginEditable name="EditRegion3" -->			
+			<div class="row">
+				<div class="col-md-3" align="center">		
+					<img class="img-circle" src="https://avatars1.githubusercontent.com/u/5178062?v=2&s=460" style="width: 120px; height: 120px;"/>
+					<!-- wordpress / Gravatar -->
+				</div>
+				<div class="col-md-9">		
+					<h3>簡裕維 (嘎都, Gaduo)</h3>					
+					gaduo.chien@gmail.com
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">			
+					<h4>學歷：</h4>
+					<dl>			
+						<dt><h4> - 碩士 (2013~2016)：</h4></dt>
+						<dd>&nbsp; &nbsp; 慈濟大學醫學資訊學研究所 </dd>		
+						<dt><h4> - 學士 (2008~2013)：</h4></dt>
+						<dd>&nbsp; &nbsp; 慈濟大學醫學資訊學系 </dd>					
+					</dl><!--學歷-->
+					
+					<h4>擅長程式語言：</h4>
+					<table class="table">
+						<tr>
+							<td>
+								<a href="http://www.oracle.com/technetwork/java/javase/overview/index.html" target="_blank">
+									<img class="img img-rounded tooltips" src="./assets/image/language/java.jpg" title="Java" style="width: 50px; height: 50px;" />
+								</a>
+							</td>
+							<td>
+								<a href="#">
+									<img class="img img-rounded tooltips" src="./assets/image/language/csharp.png" title="c#" style="width: 50px; height: 50px;" />
+								</a>
+							</td>
+							<td>
+								<a href="http://php.net/" target="_blank">
+									<img class="img img-circle tooltips" src="./assets/image/language/php.png" title="php" style="width: 50px; height: 50px;" />
+								</a>
+							</td>						
+						</tr>
+						<tr>
+							<td>
+								<a href="https://www.python.org/" target="_blank">
+									<img class="img img-circle tooltips" src="./assets/image/language/python.png" title="python" style="width: 50px; height: 50px;" />
+								</a>
+							</td>
+							<td><a href="#"><img class="img img-rounded tooltips" src="./assets/image/language/C++.png" title="c/c++" style="width: 50px; height: 50px;" /></a></td><!-- http://programacionporeventos.wikispaces.com/ -->							
+							<td></td>
+						</tr>
+					</table><!--擅長程式語言-->				
+					
+					<h4>擅長專案平台：</h4>					
+					<table class="table" width="50%">
+						<tr>
+							<td><a href="http://projects.spring.io/spring-framework/" target="_blank"><img class="img img-rounded tooltips" src="./assets/image/platform/spring-java.png" title="Java EE Framework" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Spring Framework</div></td>
+							<td><a href="http://developer.android.com/index.html" target="_blank"><img class="img img-circle tooltips" src="./assets/image/platform/android.jpg" title="Android" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Android</div></td>				
+							<td><a href="https://cloud.google.com/appengine/docs?hl=zh-TW" target="_blank"><img class="img img-rounded tooltips" src="./assets/image/platform/gae.png" title="Google App Engine" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">GAE</div></td>
+						</tr>
+						<tr>
+							<td><a href="http://www.codeigniter.org.tw/" target="_blank"><img class="img img-rounded tooltips" src="./assets/image/platform/codeigniter.jpg" title="PHP MVC Framework" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Codeigniter</div></td>		
+							<td><a href="http://www.arduino.cc/" target="_blank"><img class="img img-circle tooltips" src="./assets/image/platform/arduino.jpg" title="Arduino" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Arduino</div></td>									
+							<td><a href="http://www.ubuntu-tw.org/" target="_blank"><img class="img img-circle tooltips" src="./assets/image/platform/linux.png" title="Linux" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Linux</div></td>							
+						</tr>
+						<tr>
+							<td>
+								<a href="http://gaduo-chien-blog.logdown.com/" target="_blank">
+								<img class="img img-rounded tooltips" src="./assets/image/platform/logdown.png" title="個人網誌" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Logdown</div>
+							</td>							
+							<td colspan="2">
+								<a href="http://www.asp.net/mvc" target="_blank">
+									<img class="img img-rounded tooltips" src="./assets/image/platform/asp.net_mvc.jpg" title="Asp.net MVC 4" style="width: 100px; height: 50px;" />
+								</a><br/>
+								<div class="text-center">Asp.net MVC</div>
+							</td>																						
+						</tr>
+						<tr>
+							<td><a href="https://github.com/Gaduo" target="_blank"><img class="img img-circle tooltips" src="./assets/image/platform/github.png" title="Github" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Github</div></td>
+							<td><a href="https://jenkins-ci.org/" target="_blank"><img class="img img-circle tooltips" src="./assets/image/platform/jenkins.png" title="持續整合平台" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Jenkins</div></td>
+							<td><a href="https://bitnami.com/stack/redmine" target="_blank">
+								<img class="img img-rounded tooltips" 
+								src="./assets/image/platform/redmine.png" title="專案管理平台" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">Redmine</div></td>										
+						</tr>
+						<tr>
+							<td colspan="2"><a href="https://www.mongodb.org/" target="_blank">
+								<img class="img img-circle tooltips" src="./assets/image/platform/mongodb.png" title="Database" style="width: 150px; height: 50px;" /></a><br/>
+								<div class="text-center">MongoDB</div></td>
+							<td><a href="http://www.zkoss.org/" target="_blank"><img class="img img-circle tooltips" src="./assets/image/platform/zk.png" title="Java EE Framework" style="width: 50px; height: 50px;" /></a><br/>
+								<div class="text-center">ZK</div></td>
+																	
+						</tr>
+						<!--<a href="http://hadoop.apache.org/" target="_blank"><img class="img img-circle" src="./assets/image/platform/hadoop.png" title="Hadoop" style="width: 50px; height: 50px;" /></a>-->
+					</table><!-- 擅長專案平台 -->
+					
+					<h4>書籍：</h4>
+					<table class="table">
+						<tr>
+							<td>
+								<img class="img img-responsive tooltips" 
+									src="./assets/image/books/被討厭的勇氣：自我啟發之父「阿德勒」的教導.jpg" 									
+									title="&lt;img src=&quot;./assets/image/books/被討厭的勇氣：自我啟發之父「阿德勒」的教導.jpg&quot; width=250 /&gt;" style="width: 50px; " /><br/>
+							</td>
+							<td>
+								<img class="img img-responsive tooltips" 
+									src="./assets/image/books/檢查表：不犯錯的祕密武器.jpg" 									
+									title="&lt;img src=&quot;./assets/image/books/檢查表：不犯錯的祕密武器.jpg&quot; width=250 /&gt;" style="width: 50px; " /><br/>
+							</td>
+							<td>
+								<img class="img img-responsive tooltips" 
+									src="./assets/image/books/Specification by Example 中文版：團隊如何交付正確的軟體.png" 									
+									title="&lt;img src=&quot;./assets/image/books/Specification by Example 中文版：團隊如何交付正確的軟體.png&quot; width=250 /&gt;" style="width: 50px; " /><br/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="img img-responsive tooltips" 
+										src="./assets/image/books/SCRUM：用一半的時間做兩倍的事.jpg" 
+										title="&lt;img src=&quot;./assets/image/books/SCRUM：用一半的時間做兩倍的事.jpg&quot; width=250 /&gt;" style="width: 50px; " /><br/>
+							</td>
+							<!--							
+							<td>
+								<img class="img img-responsive tooltips" 
+										src="./assets/image/books/笑談軟體工程：敏捷開發法的逆襲.png" 
+										title="&lt;img src=&quot;./assets/image/books/笑談軟體工程：敏捷開發法的逆襲.png&quot; width=250 /&gt;" style="width: 50px; " /><br/>								
+							</td>	
+							<td>
+								<img class="img img-responsive tooltips" 
+										src="./assets/image/books/無瑕的程式碼.jpg"
+										title="&lt;img src=&quot;./assets/image/books/無瑕的程式碼.jpg&quot;width=250 /&gt;" style="width: 50px; " /><br/>
+							</td>
+							-->
+						</tr>
+					</table><!--書籍-->	
+					
+					<h4>活動：</h4>
+					<table class="table">
+						<tr>
+							<td>
+								<a href="http://coscup.org/"><img class="img img-rounded tooltips" src="./assets/image/activity/coscup.jpg" title="參與2010, 2011, 2014 開放原始碼年會" style="width: 50px; height: 50px;" /></a>
+								<div><abbr class="tooltips" title="Conference for Open Source Coders, Users and Promoters">COSCUP</abbr></div>				
+							</td>
+						</tr>
+					</table><!--活動-->				
+					<br/>
+					<br/>
+					<br/>
+					<br/>				
+				</div> 
+				<div class="col-md-8">	
+					<h4>作品/經歷：</h4>	
+					<div id="timeline" class="timeline-container">
+						<button class="timeline-toggle">+ expand all</button>
+						<br class="clear">
+						<div class="timeline-wrapper">						
+							<h4 class="timeline-time"><span>碩士</span></h4>
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="__mongo_2015"><a>2015, M101J: MongoDB for Java Developers 結業證書
 
-  <!-- un-comment this code to enable service worker
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.log('Error', err));
-    }
-  </script>-->
+</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="__mongo_2015EX">		
+									<div class="row margin">			
+										<img src="assets/image/mongodb/M101J-2.png" width="400px" />
+										<div class="text-left">結業證書</div>
+										<br/>
+										<ul>										
+											<li>照片：<a data-toggle="modal" data-target="#mongo">結業證書&成績表</a></li>
+											<li>外部連結：<a href="https://university.mongodb.com/course_completion/dadfd17442a449a38a4f1340248b10e4">Mongo University 結業證書</a></a></li>
+										</ul>
+										
+									</div>
+									<div class="row margin">	                    
+										<span class="label label-primary">MongoDB</span>
+									</div>									
+									
+									<!-- Modal -->
+									<div class="modal fade" id="mongo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">
+													<span aria-hidden="true">&times;</span>
+													<span class="sr-only">Close</span></button>
+													<h4 class="modal-title" id="myModalLabel">Mongo University <small>M101J: MongoDB for Java Developers 結業證書</small></h4>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-lg-12">
+															<img src="assets/image/mongodb/M101J-2.png" height="500px"/>
+															<div class="text-center">圖1、結業證書</div><br/>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-12">
+															<img src="assets/image/mongodb/M101J-grade.png" height="500px" />
+															<div class="text-center">圖2、成績表</div><br/>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>						
+									
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->		
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="__Java_2014"><a class="color-grey">2014, Java 程式設計教學助理</a></dt>
+								<span class="tick tick-after"></span>
+							</dl><!-- /.timeline-series -->		
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_2014"><a>2014, 使用自然語言處理技術從電子病歷中自動擷取冠心病危險因子以輔助冠心病回溯性研究</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_2014EX">
+									<div class="row margin">													
+										<p>
+											&nbsp; &nbsp; &nbsp; &nbsp;   臨床上，當醫師欲得知心臟疾病病患的危險因子情況時，通常需閱讀病歷，進行病歷回顧。為減輕醫師的負擔並節省時間，本研究希望利用自然語言處理技術，建置自動化系統閱讀病歷，從臨床敘述文件中自動擷取出「心臟疾病危險因子」，產出草稿總結一篇病歷之心臟疾病危險因子，提供研究人員或醫師快速確認，以節省醫師在病歷回顧時的時間與人力。<br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; 
+											本研究以花蓮某醫學中心入院病摘為例，利用自然語言處理技術，使用 cTAKES 及 MetaMap 分析臨床敘述文件，加上CRFs序列標記模型，搭配過濾機制，擷取入院病摘中與心臟疾病相關的目標詞彙。再搭配機器學習分類器，辨別目標詞彙的對象（病患/家人）及極值（有/沒有）。最後以決策模組，決定這篇入院病摘中，各心臟疾病危險因子的狀態，產出草稿，提供醫師快速確認危險因子。
+										</p>
+									</div>
+									<div class="row margin">									
+										<span class="label label-primary">Spring Framework</span>、
+										<span class="label label-primary">Restful API</span>、
+										<span class="label label-primary">monongodb</span>、
+										<span class="label label-primary">Apache cTAKES</span>、
+										<span class="label label-primary">MetaMap</span>、
+										<span class="label label-primary">CRFs</span>、
+										<span class="label label-primary">Risk Factors</span>
+									</div>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="__Java_2013"><a class="color-grey">2013, Java 程式設計教學助理</a></dt>
+								<span class="tick tick-after"></span>
+								<!--<dd class="timeline-event-content" id="__Java_2013EX">													
+									<p>
+									</p>
+									<br class="clear">
+								</dd>--><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_Master_2013"><a>2013, IHE-C Connectathon 2013 (09/22 ~ 09/28)</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_Master_2013EX">	
+									<div class="row margin">								
+										<p>
+											&nbsp; &nbsp; &nbsp; &nbsp;  延續 "建立新世代個人化雲端健康記錄醫療資訊服務系統"，這次前往北京天壇醫院聯測主要角色為：	
+										</p>				
+									</div>
+									<div class="row margin">	
+										<ol>
+											<li>Cross-Enterprise Document Sharing (XDS)</li>
+											<li>Cross-enterprise Document Sharing for Imaging (XDS-I)</li>
+											<li>Patient Identifier Cross-Referencing (PIX)</li>
+											<li>Patient Demographics Query (PDQ)</li>
+											<li>Consistent-Time(CT)</li>
+										</ol>
+									</div>
+									<div class="row margin">
+										<img src="assets/image/ihe/RKeIuPobBBZUR7uG-D5015.png" width="768px" />
+										<div class="text-center">圖1、醫院間資訊交換示意圖</div>
+										<img src="assets/image/ihe/iti-41.png" width="500px" />
+										<div class="text-center">圖2、聯測測試介面圖 - 上傳</div>
+									</div>
+									<div class="row margin">	
+										<span class="label label-primary">Spring Framework</span>、
+										<span class="label label-primary">Apache Maven</span>、
+										<span class="label label-primary">ZK</span>、
+										<span class="label label-primary">OpenHealthTools</span>、<br/><br/>
+										<span class="label label-primary">apache axis2</span>、
+										<span class="label label-primary">Oracle DataBase</span>		
+									</div>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl>
+						</div>
+						<div class="timeline-wrapper">
+							<h4 class="timeline-time"><span>碩士前暑期</span></h4>
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_preMaster_2013"><a>2013, 輔導記錄登錄系統</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_preMaster_2013EX">
+									<div class="row margin">	
+										<p>
+											&nbsp; &nbsp; &nbsp; &nbsp; 提供平台，讓教師在輔導學生後，登錄輔導記錄，因應各處室需求，收集並統整記錄內容，提供教師評鑑之評鑑依據。
+										</p>   
+									</div>
+									<div class="row margin">	
+										<ul>
+											<li>PDF：<a target="_blank" href="assets/doc/輔導記錄登錄系統.pdf">報告書</a></li>
+										</ul>
+									</div>
+									<div class="row margin">	                    
+										<span class="label label-primary">asp.net mvc4</span>、
+										<span class="label label-primary">MSSQL</span>
+									</div>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->
+						</div>
+						<div class="timeline-wrapper">
+							<h4 class="timeline-time"><span>學士</span></h4>
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_Bachelor_2013"><a>2013, IHE-C Connectathon 2013 (03/17 ~ 03/23)</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_Bachelor_2013EX">
+									<div class="row margin">
+										<p>											
+											&nbsp; &nbsp; &nbsp; &nbsp; 是與台北醫學大學產學合作的計畫 - <strong>建立新世代個人化雲端健康記錄醫療資訊服務系統</strong>，建立醫療雲端服務，記錄健康記錄。 <br/><br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; 遵照 <abbr title="Integrating the Healthcare Enterprise">IHE</abbr> 的規範實作，計畫完成的模組有 Cross-Enterprise Document Sharing (<abbr title="Cross-Enterprise Document Sharing">XDS</abbr>) 之中的 Repository, Registry，分別是健康記錄分散儲存及索引集中管理。<br/><br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; 為什麼要遵照 IHE 規範? 在健康記錄交換時，常遇到廠商間有不同的交換規格，對於醫院來說，招標系統廠商開發或維護系統，都需要很大的成本;而遵照IHE規範的概念即是讓醫療系統模組能"熱插拔"，當所有廠商按照標準記錄內容，建立相同的交換架構時，便能讓系統間的耦合度降低，以達到取代性及可擴充性。<br/><br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; Pre-Connectathon (聯測前)，大會會請各廠商用規定的軟體測試系統，並上傳測試結果，完成一定比例後，便招集各廠商，像IHE-China，則到北京天壇醫院進行為期5天的測試，並規定每個Use Case，使每個廠商扮演一個系統角色，且必須與三家(以上)不同角色的廠商進行連接測試，大約有一兩百項的Use Case(視報名的系統角色而定)。若在五天內完成所有項目，大會則會發給證明。<br/>
+										</p>
+									</div>
+									<div class="row margin">
+										<img src="assets/image/ihe/RKeIuPobBBZUR7uG-CFDD9.png" width="768px" />
+										<div class="text-center">圖3、本計劃基礎建設架構圖</div>
+									</div>
+									<div class="row margin">
+										<ul>
+											<li>外部連結：GitHub，<a href="http://gaduo.github.io/IHE-IT-Infrastructure/" target="_blank">IHE-IT-Infrastructure</a></li>
+											<li>外部連結：<a href="http://gaduo-chien-blog.logdown.com/categories/Integrating-the-Healthcare-Enterprise" target="_blank">Logdown 網誌說明 IHE 相關資訊</a></li>
+											<li>照片：<a href="#" data-toggle="modal" data-target="#connectathon">聯測照片</a></li>
+										</ul>
+									</div>						
+									<!-- Modal -->
+									<div class="modal fade" id="connectathon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+													<h4 class="modal-title" id="myModalLabel">IHE-C 三月份聯測</h4>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-lg-12">
+															<img src="assets/image/certificate/3月聯測.jpg" width="800px" />
+															<div class="text-center">圖1、聯測最後一天與合華 李經理、北醫 楊學長、慈大 歐學長合影</div><br/>								
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>									
+									<div class="row margin">
+										<span class="label label-primary">Spring Framework</span>、
+										<span class="label label-primary">Apache Maven</span>、
+										<span class="label label-primary">ZK</span>、
+										<span class="label label-primary">OpenHealthTools</span>、<br/><br/>
+										<span class="label label-primary">apache axis2</span>、
+										<span class="label label-primary">Oracle DataBase</span>
+									</div>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->			
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="__Java_2013"><a class="color-grey">2012, Java 程式設計教學助理</a></dt>
+								<span class="tick tick-after"></span>
+								<!--<dd class="timeline-event-content" id="__Java_2013EX">													
+									<p>
+									</p>
+									<br class="clear">
+								</dd>--><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_2012"><a>2012, Google App Engine (GAE)</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_2012EX">
+									<div class="row margin">
+										<p>
+											&nbsp; &nbsp; &nbsp; &nbsp; GAE作品之一的「慈濟大學排球代表隊」網站，由先前的PHP網站改版而來，因為GAE提供免費且穩定的平台，所以將網站移植至此。<br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; GAE 是個讓學生可以充分發揮的作業平台，它有完整的MVC架構及Google 服務，能實現許多功能，使作品充實且完整。除了「慈濟大學排球代表隊」網站外，還有環島地圖等也移植至此。<br/>
+										</p>  
+									</div>
+									<div class="row margin">
+										<img src="assets/image/google-map/map.png" width="500px" />
+										<div class="text-left">圖4、環島地圖</div>
+									</div>
+									<div class="row margin">
+										<ul>
+											<li>外部連結：<a href="http://tcu-vbt.appspot.com/" target="_blank">慈濟大學排球代表隊</a></li>
+											<li>外部連結：<a href="http://gaduo-chien.appspot.com/trip/" target="_blank">環島地圖</a></li>											
+										</ul>
+									</div>
+									<div class="row margin">
+										<span class="label label-primary">Google App Engine (Python)</span>、
+										<span class="label label-primary">Android</span>
+									</div>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->	
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_2012_"><a>2012, 邊做、邊說、邊記-隨身護理記錄輔助系統</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_2012_EX">
+									<div class="row margin">
+										<p>
+											&nbsp; &nbsp; &nbsp; &nbsp; 大學畢業專題，開發一套隨身護理記錄輔助系統，幫助護理人員在照護病人完畢後，可以利用說話的方式記錄護理記錄，使得護理記錄具有完整性並節省記錄的時間。											
+										</p>           										
+									</div>
+									<div class="row margin">
+										<img src="assets/image/special_topic/flow_chart.png" width="500px" />
+										<div class="text-left">圖5、隨身護理記錄輔助系統-架構圖</div>
+									</div>
+									<ul>
+										<li>連結：<a href="special_topic.html" >專題摘要</a></li>
+									</ul>   									
+									<div class="row margin">    
+										<span class="label label-primary">Java</span>、
+										<span class="label label-primary">Android</span>、
+										<span class="label label-primary">Codeigniter</span>、
+										<span class="label label-primary">MySQL</span>
+										<br class="clear">    
+									</div>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->
+							
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_2011"><a>2011, Android 小專案</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_2011EX">
+									<div class="row margin">
+										<img src="assets/image/ecg/ECG1.png" width="500px"/>
+										<div class="text-left">圖6、心電圖</div>
+									</div>
+									<div class="row margin">
+										<ul>
+											<li>外部連結：<a href="http://gaduo-chien-blog.logdown.com/posts/2014/03/20/translate-rice-cakes" target="_blank">翻譯蒟蒻</a></li>
+											<li>照片：<a href="#" data-toggle="modal" data-target="#ecg">心電圖</a></li>
+										</ul>   
 
-  <link href="build/main.css" rel="stylesheet">
+										<!-- Modal -->
+										<div class="modal fade" id="ecg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+														<h4 class="modal-title" id="myModalLabel">心電圖</h4>
+													</div>
+													<div class="modal-body">
+														<div class="row">
+															<div class="col-lg-12">
+																<div class="text-center"><img src="assets/image/ecg/main.png" width="600px"/></div><br/>
+																<div class="text-center">圖1、主畫面</div><br/>
+																<div class="text-center"><img src="assets/image/ecg/ECG1.png" width="600px"/></div><br/>
+																<div class="text-center">圖2、心電圖-01</div><br/>
+																<div class="text-center"><img src="assets/image/ecg/ECG2.png" width="600px"/></div><br/>
+																<div class="text-center">圖3、心電圖-02</div><br/>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>      
+									</div>
+									<div class="row margin">    
+										<span class="label label-primary">Java</span>、
+										<span class="label label-primary">Android</span>
+										<br class="clear">    
+									</div>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_2010"><a>2010, PHP 商務網頁、校排球代表隊網頁</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_2010EX">
+									<ul>
+										<li>照片：<a href="#" data-toggle="modal" data-target="#qhome">商務網站</a></li>
+										<li>照片：<a href="#" data-toggle="modal" data-target="#tcuvbt">校排球代表隊網站</a></li>
+									</ul>
+									<!-- Modal -->
+									<div class="modal fade" id="qhome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+													<h4 class="modal-title" id="myModalLabel">商務網站</h4>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-lg-12">
+															<div class="text-center"><img src="assets/image/php/QHome_Taiwan/index.png" width="800px" /></div>
+															<div class="text-center">圖1、首頁</div><br/>
+															<div class="text-center"><img src="assets/image/php/QHome_Taiwan/member.png" width="800px" /></div>
+															<div class="text-center">圖2、會員中心</div><br/>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>	
+									<!-- Modal -->
+									<div class="modal fade" id="tcuvbt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+													<h4 class="modal-title" id="myModalLabel">排球代表隊網站</h4>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-lg-12">
+															<div class="text-center"><img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (1).png" width="800px" /></div>
+															<div class="text-center">圖1、首頁</div><br/>
+															<div class="text-center"><img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (4).png" width="800px" /></div>
+															<div class="text-center">圖2、會議記錄</div><br/>
+															<div class="text-center"><img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (5).png" width="800px" /></div>
+															<div class="text-center">圖3、比賽成績</div><br/>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>		
+									<!--
+									-->
+									<span class="label label-primary">PHP</span>、
+									<span class="label label-primary">MySQL</span>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->	
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_2009"><a>2009, 電算中心工讀生(至畢業)</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_2009EX">
+									<div class="row margin">
+										<p>								
+										工作主要內容：
+										</p>
+									</div>
+									<div class="row margin">
+										<ol>
+											<li>維修電腦</li>
+											<li>設定電腦周邊設備</li>
+											<li>網路管理(含牽線、拆裝網路設備)</li>
+										</ol>
+									</div>
+									<div class="row margin">
+										<p>
+										&nbsp; &nbsp; &nbsp; &nbsp; 工讀期間向中心的大哥們學習如何架設Server及維修電腦，只要有心學習，大哥們都很樂於分享自己解決問題的經驗，週末會一同騎單車出遊，即使是工讀生也少不了期末聚餐。
+										</p>
+									</div>
+									<div class="row margin">
+										<div class="text-left">
+											<img src="assets/image/certificate/楷模工讀生.jpg" width="360px"/>
+											<div class="text-left">圖6、楷模工讀生獎狀</div>
+										</div>
+									</div>
+									<ul>
+										<li>照片：<a data-toggle="modal" data-target="#job">楷模工讀生</a></li>
+									</ul>
+									
+									<!-- Modal -->
+									<div class="modal fade" id="job" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+													<h4 class="modal-title" id="myModalLabel">楷模工讀生</h4>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-lg-6">
+															<img src="assets/image/certificate/楷模工讀生.jpg" height="600px"/>
+															<div class="text-center">圖1、楷模工讀生獎狀</div><br/>
+														</div>
+														<div class="col-lg-6">
+															<img src="assets/image/certificate/機房裝機2.jpg" height="600px" />
+															<div class="text-center">圖2、機房整線情況</div><br/>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_2008"><a class="color-grey">2008, 大學新鮮人</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_2008EX">
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->
+						</div><!-- /.timeline-wrapper -->
+						<button class="timeline-toggle">+ expand all</button>
+						<br class="clear">
+					</div>  
+				</div>
+			</div>	
+			
+			<!-- InstanceEndEditable -->
+      	<div class="footer">
+			<p>&copy; Gaduo 2016</p>
+		</div>
+ 
+	</div> <!-- /container -->
 
-</head>
-<body>
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-56436126-1', 'auto');
+      ga('send', 'pageview');
+    
+    </script>
+	<script type="text/javascript" src="assets/js/jquery/2.1.1/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
 
-  <!-- Ionic's root component and where the app will load -->
-  <ion-app></ion-app>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
-  <!-- The polyfills js is generated during the build process -->
-  <script src="build/polyfills.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-  <!-- The bundle js is generated during the build process -->
-  <script src="build/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- InstanceBeginEditable name="EditRegion4" -->
+		
+		<script type="text/javascript" src="assets/js/timeliner/timeliner.min.js"></script>
+		<script type="text/javascript" src="assets/js/vendor/venobox/venobox.min.js"></script>
+		<script type="text/javascript" src="assets/js/tooltipster/jquery.tooltipster.min.js" ></script>
 
-</body>
-</html>
+		<script>
+			$(document).ready(function() {
+				$.timeliner({
+					timelineContainer:'#timeline'
+				});
+				$('.venobox').venobox();
+	            var tooltip = {
+	                minWidth : 200,
+	                theme : "tooltipster-light",
+	                updateAnimation: false,
+	                contentAsHTML: true,
+	                autoClose : true,
+	                onlyOne : false,
+	                position : "right",
+	                positionTracker : true
+	            };
+	            $(".tooltips").tooltipster(tooltip);
+			});
+
+		</script>		
+		<!-- InstanceEndEditable -->
+	
+	
+  </body>
+<!-- InstanceEnd --></html>
