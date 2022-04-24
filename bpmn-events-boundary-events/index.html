@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="Zh-tw"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> BPMN | Events | Boundary Events | 邊界事件 · PickOneFish's Blog</title><meta name="description" content="BPMN | Events | Boundary Events | 邊界事件 - PickOneFish"><meta name="keywords" content="Nebular,akveo/Nebular,ngx-admin,Smart-On-FHIR,Angular,FHIR"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/atom.xml" title="PickOneFish's Blog"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/search.xml" title="PickOneFish's Blog"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/sitemap.xml" title="PickOneFish's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about-me/" target="_self" class="nav-list-link">關於我</a></li><li class="nav-list-item"><a href="/about-me/index-en.html" target="_self" class="nav-list-link">ABOUTME</a></li><li class="nav-list-item"><a href="https://github.com/pickonefish" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><h1 class="post-title">BPMN | Events | Boundary Events | 邊界事件</h1><div id="toc" class="toc-article"><strong class="toc-title">Table Of Contents<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Boundary-Events"><span class="toc-number">2.</span> <span class="toc-text">Boundary Events</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Timer-Boundary-Event"><span class="toc-number">2.1.</span> <span class="toc-text">Timer Boundary Event</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Error-Boundary-Event"><span class="toc-number">2.2.</span> <span class="toc-text">Error Boundary Event</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Signal-Boundary-Event"><span class="toc-number">2.3.</span> <span class="toc-text">Signal Boundary Event</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Message-Boundary-Event"><span class="toc-number">2.4.</span> <span class="toc-text">Message Boundary Event</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cancel-Boundary-Event"><span class="toc-number">2.5.</span> <span class="toc-text">Cancel Boundary Event</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Compensation-Boundary-Event"><span class="toc-number">2.6.</span> <span class="toc-text">Compensation Boundary Event</span></a></li></ol></li></ol></strong></div><div class="post"><article class="post-block"><div class="post-info">2020/12/15</div><div class="post-content"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
+<li><p>事件可以依【發生位置】與【特性】來分類</p>
+<ul>
+<li><p>以【發生位置】分為</p>
+<ul>
+<li>「開始事件」</li>
+<li>「中間事件」<ul>
+<li>可以再依【發生位置】劃分出「邊界事件」</li>
+</ul>
+</li>
+<li>「結束事件」</li>
+</ul>
+</li>
+<li><p>以【特性】分為</p>
+<ul>
+<li>「接收 (Catching) 事件」</li>
+<li>「拋出 (Thowing) 事件」</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="Boundary-Events"><a href="#Boundary-Events" class="headerlink" title="Boundary Events"></a>Boundary Events</h1><p><strong>邊界事件</strong></p>
+<ul>
+<li><strong>附屬</strong> (依附) 於流程活動 (如：任務 Task、子流程 Sub-Process) 的事件。</li>
+<li>屬於<ul>
+<li>中間 (Intermediate) 事件</li>
+<li>接收 (Catching) 事件</li>
+</ul>
+</li>
+</ul>
+<h2 id="Timer-Boundary-Event"><a href="#Timer-Boundary-Event" class="headerlink" title="Timer Boundary Event"></a>Timer Boundary Event</h2><p><strong>定時器邊界事件</strong></p>
+<blockquote>
+<p>A boundary timer event puts a timer on the activity it is defined on. When the timer fires, the sequence flow going out the boundary event is followed.</p>
+</blockquote>
+<ul>
+<li><p>當流程到達 <font color="#008000"><strong>定時器邊界事件</strong></font> 所在的流程活動時，<br>經過 <u>所設定的時間後</u> 會觸發 <font color="#008000"><strong>定時器邊界事件</strong></font> ，<br>此時 <font color="#008000"><strong>定時器邊界事件</strong></font> 所在的任務會被中斷 (cancelActivity = true)，<br>流程會從 <font color="#008000"><strong>定時器邊界事件</strong></font> 離開，<br>走向 <font color="#008000"><strong>定時器邊界事件</strong></font> 所指向的另一個流程活動。</p>
+</li>
+<li><p>cancelActivity 屬性，用來設定是否中斷 定時器邊界事件 所在的任務</p>
+<ul>
+<li>true: 中斷 (<strong>可中斷</strong> 定時器邊界事件)</li>
+<li>false: 不中斷 (<strong>不可中斷</strong> 定時器邊界事件)</li>
+</ul>
+</li>
+</ul>
+<!-- TODO: 流程圖 -->
+<h2 id="Error-Boundary-Event"><a href="#Error-Boundary-Event" class="headerlink" title="Error Boundary Event"></a>Error Boundary Event</h2><p><strong>錯誤邊界事件</strong></p>
+<blockquote>
+<p>A boundary error event catches an error that is thrown within the boundaries of the activity the event is based on and continues process execution from the event.</p>
+</blockquote>
+<ul>
+<li>用於接收子流程中拋出的錯誤</li>
+<li>errorRef 屬性<ul>
+<li>在錯誤邊界事件沒有使用 errorRef 屬性的情況下，錯誤邊界事件將接收所有的錯誤事件。</li>
+<li>在錯誤邊界事件有使用 errorRef 屬性的情況下，錯誤邊界事件只會接收與指定的 errorCode 相同的 error</li>
+</ul>
+</li>
+</ul>
+<!-- TODO: 流程圖 -->
+<h2 id="Signal-Boundary-Event"><a href="#Signal-Boundary-Event" class="headerlink" title="Signal Boundary Event"></a>Signal Boundary Event</h2><p><strong>信號邊界事件</strong></p>
+<blockquote>
+<p>A boundary signal event listens to a signal being fired (from within the process instance or system-wide) while the activity upon which the event is defined is active.</p>
+</blockquote>
+<!-- TODO: 流程圖 -->
+<h2 id="Message-Boundary-Event"><a href="#Message-Boundary-Event" class="headerlink" title="Message Boundary Event"></a>Message Boundary Event</h2><p><strong>訊息邊界事件</strong></p>
+<blockquote>
+<p>A boundary message event listens to a message being received while the activity upon which the event is defined is active.</p>
+</blockquote>
+<!-- TODO: 流程圖 -->
+<h2 id="Cancel-Boundary-Event"><a href="#Cancel-Boundary-Event" class="headerlink" title="Cancel Boundary Event"></a>Cancel Boundary Event</h2><p><strong>取消邊界事件</strong></p>
+<!-- TODO: 流程圖 -->
+<h2 id="Compensation-Boundary-Event"><a href="#Compensation-Boundary-Event" class="headerlink" title="Compensation Boundary Event"></a>Compensation Boundary Event</h2><p><strong>回饋邊界事件</strong></p>
+<!-- TODO: 流程圖 -->
+</div></article></div></main><footer><div class="paginator"><a href="/bpmn-events-intermediate-catching-events/" class="next">PREV</a><a href="/bpmn-gateways/" class="prev">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'pickonefish';
+var disqus_identifier = 'bpmn-events-boundary-events/';
+var disqus_title = 'BPMN | Events | Boundary Events | 邊界事件';
+var disqus_url = 'https://pickonefish.github.io/bpmn-events-boundary-events/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//pickonefish.disqus.com/count.js" async></script><div class="copyright"><p>© 2018 - 2022 <a href="https://pickonefish.github.io">PickOneFish</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script data-ad-client="ca-pub-6473474968216737" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-122834547-1",'auto');ga('send','pageview');</script></body></html>

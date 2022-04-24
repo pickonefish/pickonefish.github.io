@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="Zh-tw"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> ANGULAR | akveo/nebular 系列 - 2.1. 安裝入門套件 | 中文 · PickOneFish's Blog</title><meta name="description" content="入門套件開始 Nebular 是最簡單的方法執行您的第一個 Nebular 應用程式。"><meta name="keywords" content="Nebular,akveo/Nebular,ngx-admin,Smart-On-FHIR,Angular,FHIR"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/atom.xml" title="PickOneFish's Blog"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/search.xml" title="PickOneFish's Blog"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/sitemap.xml" title="PickOneFish's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about-me/" target="_self" class="nav-list-link">關於我</a></li><li class="nav-list-item"><a href="/about-me/index-en.html" target="_self" class="nav-list-link">ABOUTME</a></li><li class="nav-list-item"><a href="https://github.com/pickonefish" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><h1 class="post-title">ANGULAR | akveo/nebular 系列 - 2.1. 安裝入門套件 | 中文</h1><div id="toc" class="toc-article"><strong class="toc-title">Table Of Contents<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安裝入門套件"><span class="toc-number">1.</span> <span class="toc-text">安裝入門套件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安裝工具"><span class="toc-number">1.1.</span> <span class="toc-text">安裝工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下載程式碼"><span class="toc-number">1.2.</span> <span class="toc-text">下載程式碼</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#執行本地副本"><span class="toc-number">1.3.</span> <span class="toc-text">執行本地副本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#建立產品包"><span class="toc-number">1.4.</span> <span class="toc-text">建立產品包</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相關文章"><span class="toc-number">1.5.</span> <span class="toc-text">相關文章</span></a></li></ol></li></ol></strong></div><div class="post"><article class="post-block"><div class="post-info">2018/07/20</div><div class="post-content"><p>原文：<a href="https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit#install-based-on-starter-kit" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit#install-based-on-starter-kit</a></p>
+<h1 id="安裝入門套件"><a href="#安裝入門套件" class="headerlink" title="安裝入門套件"></a>安裝入門套件</h1><p>可以從 <a href="https://github.com/akveo/ngx-admin/" target="_blank">ngx-admin</a> 入門套件開始 Nebular 是最簡單的方法執行您的第一個 Nebular 應用程式。</p>
+<p><strong>ngx-admin</strong> 只是一個前端應用程式，後端整合可以做地相對簡單，但請注意目前資料都使用 Javascript 物件模擬。<br>如果您想要動態取得資料，您應該考慮自己開發一個後端整合。<br>Nebular 團隊不提供通用的「整合層」作為這個專案的一部分，因為每個後端 API 在資料格式和 URLs 有不同的結構。</p>
+<hr>
+
+<h2 id="安裝工具"><a href="#安裝工具" class="headerlink" title="安裝工具"></a>安裝工具</h2><p>安裝 ngx-admin 到您的機器上前您需要先安裝以下工具:</p>
+<ul>
+<li>Git - <a href="https://git-scm.com" target="_blank">https://git-scm.com</a></li>
+<li>Node.js - <a href="https://nodejs.org" target="_blank">https://nodejs.org</a>. 請注意 <strong>版本</strong> 應該是 <strong>&gt;=8</strong></li>
+<li>Npm - Node.js package manager 是伴隨著 Node.js. 請確認 npm <strong>版本</strong> 是 <strong>&gt;=5</strong></li>
+<li>您可能還需要一些特定的本機軟體包，具體取決於您的操作系統，像是在 Ubuntu 上需要 <code>build-essential</code>。</li>
+</ul>
+<blockquote>
+<p><strong>警告!</strong><br>請注意到因為 Angular 的建構方式 <strong>沒有這些工具</strong> 是 <strong>不能</strong> 建置 ngx-admin 的。</p>
+</blockquote>
+<h2 id="下載程式碼"><a href="#下載程式碼" class="headerlink" title="下載程式碼"></a>下載程式碼</h2><p>當你完成工具的設置後，你需要下載 <code>ngx-admin</code> 應用程式的程式碼。最簡單的方式是複製 GitHub repository:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/akveo/ngx-admin.git</span><br></pre></td></tr></table></figure></p>
+<p>在複製完成後，你需要安裝 npm 模組:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ngx-admin &amp;&amp; npm i</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p><strong>警告!</strong><br>請確認沒有錯誤的，成功地完成安裝。</p>
+</blockquote>
+<h2 id="執行本地副本"><a href="#執行本地副本" class="headerlink" title="執行本地副本"></a>執行本地副本</h2><p>於開發模式下執行本地副本可以執行:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure>
+<p>Go to <a href="http://0.0.0.0:4200" target="_blank">http://0.0.0.0:4200</a> or <a href="http://localhost:4200" target="_blank">http://localhost:4200</a> in your browser.</p>
+<hr>
+
+<h2 id="建立產品包"><a href="#建立產品包" class="headerlink" title="建立產品包"></a>建立產品包</h2><p>於產品模式下建立一個產品包可以執行:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build:prod</span><br></pre></td></tr></table></figure>
+<p>這將會清除您的 <code>dist</code> 目錄 (放置 release 檔案的地方) 以及產生一個 release 建置。<br>現在您可以複製這些來自 <code>dist</code> 目錄的檔案以及將他們部署到後端框架或者簡單地 <a href="9.server-deployment">放置於網頁伺服器</a>。</p>
+<hr>
+
+<h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul>
+<li><a href="https://akveo.github.io/nebular/docs/guides/server-deployment" target="_blank" rel="noopener">部署到產品伺服器</a></li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/start/" class="next">PREV</a><a href="/install-into-existing/" class="prev">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'pickonefish';
+var disqus_identifier = 'install-starter-kit/';
+var disqus_title = 'ANGULAR | akveo/nebular 系列 - 2.1. 安裝入門套件 | 中文';
+var disqus_url = 'https://pickonefish.github.io/install-starter-kit/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//pickonefish.disqus.com/count.js" async></script><div class="copyright"><p>© 2018 - 2022 <a href="https://pickonefish.github.io">PickOneFish</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script data-ad-client="ca-pub-6473474968216737" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-122834547-1",'auto');ga('send','pageview');</script></body></html>

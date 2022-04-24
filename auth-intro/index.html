@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="Zh-tw"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> ANGULAR | akveo/nebular 系列 - 6.1. 認證模組 | 中文 · PickOneFish's Blog</title><meta name="description" content="認證模組主要目的是為了較容易設定 Angulr 應用程式的認證層而提供可外掛的元件組與服務。這個模組分離 UI 部分（登入、註冊等 ... ）以及在「認證策略層」幫助下的商業邏輯。"><meta name="keywords" content="Nebular,akveo/Nebular,ngx-admin,Smart-On-FHIR,Angular,FHIR"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/atom.xml" title="PickOneFish's Blog"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/search.xml" title="PickOneFish's Blog"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/sitemap.xml" title="PickOneFish's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about-me/" target="_self" class="nav-list-link">關於我</a></li><li class="nav-list-item"><a href="/about-me/index-en.html" target="_self" class="nav-list-link">ABOUTME</a></li><li class="nav-list-item"><a href="https://github.com/pickonefish" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><h1 class="post-title">ANGULAR | akveo/nebular 系列 - 6.1. 認證模組 | 中文</h1><div id="toc" class="toc-article"><strong class="toc-title">Table Of Contents<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#認證模組"><span class="toc-number">1.</span> <span class="toc-text">認證模組</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#認證-UI-元件"><span class="toc-number">1.1.</span> <span class="toc-text">認證 UI 元件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#認證策略"><span class="toc-number">1.2.</span> <span class="toc-text">認證策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他小幫手服務"><span class="toc-number">1.3.</span> <span class="toc-text">其他小幫手服務</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相關文章"><span class="toc-number">1.4.</span> <span class="toc-text">相關文章</span></a></li></ol></li></ol></strong></div><div class="post"><article class="post-block"><div class="post-info">2018/08/01</div><div class="post-content"><p>原文：<a href="https://akveo.github.io/nebular/docs/auth/introduction" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/auth/introduction</a></p>
+<h1 id="認證模組"><a href="#認證模組" class="headerlink" title="認證模組"></a>認證模組</h1><p>認證模組主要目的是為了較容易設定 Angulr 應用程式的認證層而提供可外掛的元件組與服務。<br>這個模組分離 UI 部分（登入、註冊等 … ）以及在「認證 <code>策略</code> 層」幫助下的商業邏輯。</p>
+<blockquote>
+<p><strong>注意</strong><br>這個步驟仍然要與後端服務通訊</p>
+</blockquote>
+<h2 id="認證-UI-元件"><a href="#認證-UI-元件" class="headerlink" title="認證 UI 元件"></a>認證 UI 元件</h2><ul>
+<li>登入</li>
+<li>登出</li>
+<li>註冊</li>
+<li>密碼要求</li>
+<li>密碼重置</li>
+</ul>
+<p>你可以選擇內建的元件或是客製化自己的元件。 </p>
+<hr>
+
+<h2 id="認證策略"><a href="#認證策略" class="headerlink" title="認證策略"></a>認證策略</h2><ul>
+<li><code>NbDummyAuthStrategy</code> - 為了測試目的的簡單策略，當 API 還在開發階段時可以用於模擬後端的回應。</li>
+<li><code>NbPasswordAuthStrategy</code> - 最常見的 email/login/password 認證策略。</li>
+<li><code>NbOAuth2AuthStrategy</code> - 最受歡迎的認證框架使應用程式可以獲得在 HTTP 服務下受存取限制的使用者帳戶。 <hr>
+
+</li>
+</ul>
+<h2 id="其他小幫手服務"><a href="#其他小幫手服務" class="headerlink" title="其他小幫手服務"></a>其他小幫手服務</h2><ul>
+<li><code>NbAuthService</code> - 與「配置策略」互通的服務介面。</li>
+<li><code>NbTokenService</code> - 允許您管理認證「通行證（token）」的服務；取得、設置、清除以及監聽隨時改變的通行證。</li>
+<li><code>NbTokenLocalStorage</code> - 為儲存「通行證（token）」於瀏覽器 local storage 的儲存服務。</li>
+<li><code>NbAuthJWTToken</code> 和 <code>NbAuthSimpleToken</code> - 與通行證工作的小幫手類別</li>
+<li><code>NbAuthJWTInterceptor</code> 和 <code>NbAuthSimpleInterceptor</code> - http 「攔截器（interceptors）」 將「通行證（token）」注入至 http 請求。<hr>
+
+</li>
+</ul>
+<h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul>
+<li>Auth Module <a href="https://akveo.github.io/nebular/docs/auth/installation" target="_blank" rel="noopener">Installation</a> </li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/enabling-theme-system/" class="next">PREV</a><a href="/auth-install/" class="prev">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'pickonefish';
+var disqus_identifier = 'auth-intro/';
+var disqus_title = 'ANGULAR | akveo/nebular 系列 - 6.1. 認證模組 | 中文';
+var disqus_url = 'https://pickonefish.github.io/auth-intro/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//pickonefish.disqus.com/count.js" async></script><div class="copyright"><p>© 2018 - 2022 <a href="https://pickonefish.github.io">PickOneFish</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script data-ad-client="ca-pub-6473474968216737" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-122834547-1",'auto');ga('send','pageview');</script></body></html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="Zh-tw"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> ANGULAR | akveo/nebular 系列 - 1.1. 什麼是 Nebular | 中文 · PickOneFish's Blog</title><meta name="description" content="Nebular 是你下一個 Angular 應用程式的基礎模組集。這些模組的目的是更快更有效率地解決你的通用任務，以便你更專注於業務邏輯並把常規任務拋在後面。"><meta name="keywords" content="Nebular,akveo/Nebular,ngx-admin,Smart-On-FHIR,Angular,FHIR"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/atom.xml" title="PickOneFish's Blog"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/search.xml" title="PickOneFish's Blog"><link rel="search" type="application/opensearchdescription+xml" href="https://pickonefish.github.io/sitemap.xml" title="PickOneFish's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/about-me/" target="_self" class="nav-list-link">關於我</a></li><li class="nav-list-item"><a href="/about-me/index-en.html" target="_self" class="nav-list-link">ABOUTME</a></li><li class="nav-list-item"><a href="https://github.com/pickonefish" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><h1 class="post-title">ANGULAR | akveo/nebular 系列 - 1.1. 什麼是 Nebular | 中文</h1><div id="toc" class="toc-article"><strong class="toc-title">Table Of Contents<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什麼是-Nebular"><span class="toc-number">1.</span> <span class="toc-text">什麼是 Nebular</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其他想法"><span class="toc-number">2.</span> <span class="toc-text">其他想法</span></a></li></ol></strong></div><div class="post"><article class="post-block"><div class="post-info">2018/07/11</div><div class="post-content"><p>Github：<a href="https://github.com/akveo/nebular" target="_blank" rel="noopener">https://github.com/akveo/nebular</a><br>原文：<a href="https://akveo.github.io/nebular/docs/getting-started/what-is-nebular" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/getting-started/what-is-nebular</a></p>
+<h1 id="什麼是-Nebular"><a href="#什麼是-Nebular" class="headerlink" title="什麼是 Nebular"></a>什麼是 Nebular</h1><blockquote>
+<p>Nebular 是你下一個 Angular 應用程式的基礎模組集。這些模組的目的是更快更有效率地解決你的通用任務，以便你更專注於業務邏輯並把常規任務拋在後面。</p>
+</blockquote>
+<ol>
+<li><p>Nebular Theme <code>@nebular/theme</code></p>
+<ul>
+<li>主題系統 - SCSS 規則集，允許你使用客製化的樣式和修改變數以調整應用程式的產品外觀。</li>
+<li>UI 套件- 包含三種樣式主題的純 Angular 元件，沒有第三方相依。</li>
+<li>覆寫 Bootstrap 樣式使應用程式有一致性的產品外觀。</li>
+<li>伺服器端渲染兼容性。</li>
+<li>所有的元件都支援由右向左的書寫系統 (如阿拉伯語系)</li>
+</ul>
+</li>
+<li><p>Nebular Auth <code>@nebular/auth</code></p>
+<ul>
+<li>認證元件（登入/註冊/重置密碼/請求密碼）。</li>
+<li>多種可配置身分驗證的策略（後端連結器）。</li>
+<li>多種針對「通行許可證（token）」管理的小幫手（透過 HTTP request 儲存和傳輸通行許可證）。</li>
+</ul>
+</li>
+<li><p>Nebular Security <code>@nebular/security</code></p>
+<ul>
+<li>模組針對角色以及權限管理</li>
+</ul>
+</li>
+<li><p>儀表板管理入門套件 <a href="https://github.com/akveo/ngx-admin" target="_blank" rel="noopener"><code>ngx-admin</code></a> - 以 Nebular 模組為基礎的 Angular 應用程式，有漂亮的 IoT 儀表元件</p>
+</li>
+</ol>
+<h1 id="其他想法"><a href="#其他想法" class="headerlink" title="其他想法"></a>其他想法</h1><ol>
+<li><code>@nebular/dashboard</code> -針對儀表板建置，可拖拉 、調整大小的模組。</li>
+<li><code>@nebular/data</code> - 應用程式資料與狀態的管理</li>
+</ol>
+</div></article></div></main><footer><div class="paginator"><a href="/start/" class="prev">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'pickonefish';
+var disqus_identifier = 'index/';
+var disqus_title = 'ANGULAR | akveo/nebular 系列 - 1.1. 什麼是 Nebular | 中文';
+var disqus_url = 'https://pickonefish.github.io/index/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//pickonefish.disqus.com/count.js" async></script><div class="copyright"><p>© 2018 - 2022 <a href="https://pickonefish.github.io">PickOneFish</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script data-ad-client="ca-pub-6473474968216737" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-122834547-1",'auto');ga('send','pageview');</script></body></html>
