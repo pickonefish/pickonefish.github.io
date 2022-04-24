@@ -15,31 +15,7 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/auth-intro/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://pickonefish.github.io/auth-install/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/auth-strategy/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/auth-token/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -55,7 +31,23 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/concept-theme-system/</loc>
+        <loc>https://pickonefish.github.io/auth-token/</loc>
+        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://pickonefish.github.io/auth-intro/</loc>
+        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://pickonefish.github.io/auth-strategy/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -71,7 +63,7 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/enabling-theme-system/</loc>
+        <loc>https://pickonefish.github.io/concept-theme-system/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -79,7 +71,7 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/install-into-existing/</loc>
+        <loc>https://pickonefish.github.io/enabling-theme-system/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -96,6 +88,14 @@
 
     <url>
         <loc>https://pickonefish.github.io/install-starter-kit/</loc>
+        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://pickonefish.github.io/install-into-existing/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
