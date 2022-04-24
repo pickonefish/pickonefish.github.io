@@ -7,7 +7,7 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/auth-intro/</loc>
+        <loc>https://pickonefish.github.io/auth-guard/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -15,7 +15,7 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/auth-guard/</loc>
+        <loc>https://pickonefish.github.io/auth-intro/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -47,119 +47,7 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/bpmn-activities-call-activity/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-activities-event-subprocess/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://pickonefish.github.io/auth-oauth2/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-activities-subprocess/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-activities-tasks/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-activities/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/auth-ui/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-data/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-database-scheme/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-events-end-events/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-events-intermediate-catching-events/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-events-intermediate-throwing-events/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-events-start-events/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/bpmn-gateways/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/index/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -175,6 +63,14 @@
     </url>
 
     <url>
+        <loc>https://pickonefish.github.io/auth-ui/</loc>
+        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://pickonefish.github.io/enabling-theme-system/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -183,7 +79,7 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/bpmn-events-boundary-events/</loc>
+        <loc>https://pickonefish.github.io/install-into-existing/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -191,7 +87,7 @@
     </url>
 
     <url>
-        <loc>https://pickonefish.github.io/kubernetes-install/</loc>
+        <loc>https://pickonefish.github.io/index/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -200,14 +96,6 @@
 
     <url>
         <loc>https://pickonefish.github.io/install-starter-kit/</loc>
-        <lastmod>2021-11-04T13:10:11.642Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://pickonefish.github.io/install-into-existing/</loc>
         <lastmod>2021-11-04T13:10:11.642Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

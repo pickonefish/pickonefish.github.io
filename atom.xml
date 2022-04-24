@@ -17,340 +17,6 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>BPMN | Data</title>
-    <link href="https://pickonefish.github.io/bpmn-data/"/>
-    <id>https://pickonefish.github.io/bpmn-data/</id>
-    <published>2020-12-16T18:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Data"><a href="#Data" class="headerlink" title="Data"></a>Data</h1><h2 id="Data-Objects"><a href="#Data-Objects" class="headerlink" title="Data Objects"></a>Data Objects</h2><h2 id="Data-Inputs"><a href="#Data-Inputs" class="headerlink" title="Data Inputs"></a>Data Inputs</h2><h2 id="Data-Outputs"><a href="#Data-Outputs" class="headerlink" title="Data Outputs"></a>Data Outputs</h2><h2 id="Data-Stores"><a href="#Data-Stores" class="headerlink" title="Data Stores"></a>Data Stores</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Data&quot;&gt;&lt;a href=&quot;#Data&quot; class=&quot;headerlink&quot; title=&quot;Data&quot;&gt;&lt;/a&gt;Data&lt;/h1&gt;&lt;h2 id=&quot;Data-Objects&quot;&gt;&lt;a href=&quot;#Data-Objects&quot; class=&quot;headerlink&quot; 
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Database Scheme</title>
-    <link href="https://pickonefish.github.io/bpmn-database-scheme/"/>
-    <id>https://pickonefish.github.io/bpmn-database-scheme/</id>
-    <published>2020-12-16T18:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<table><thead><tr><th style="text-align:left">#</th><th style="text-align:left">Table</th><th style="text-align:left">Description</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">ACT_GE_*</td><td style="text-align:left">General</td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">ACT_RE_*</td><td style="text-align:left">Repository</td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">ACT_ID_*</td><td style="text-align:left">Identity</td></tr><tr><td style="text-align:left">4</td><td style="text-align:left">ACT_RU_*</td><td style="text-align:left">Runtime</td></tr><tr><td style="text-align:left">5</td><td style="text-align:left">ACT_HI_*</td><td style="text-align:left">History</td></tr><tr><td style="text-align:left">6</td><td style="text-align:left">ACT_DMN_*</td><td style="text-align:left">DMN</td></tr></tbody></table><hr><h1 id="ACT-GE"><a href="#ACT-GE" class="headerlink" title="ACT_GE"></a>ACT_GE</h1><table><thead><tr><th style="text-align:left">#</th><th style="text-align:left">Table</th><th style="text-align:left">Description</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">ACT_GE_BYTEARRAY</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">ACT_GE_PROPERTY</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">ACT_GE_SCHEMA_LOG</td></tr></tbody></table><hr><h1 id="ACT-RE"><a href="#ACT-RE" class="headerlink" title="ACT_RE"></a>ACT_RE</h1><table><thead><tr><th style="text-align:left">#</th><th style="text-align:left">Table</th><th style="text-align:left">Description</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">ACT_RE_CASE_DEF</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">ACT_RE_DECISION_DEF</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">ACT_RE_DECISION_REQ_DEF</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">4</td><td style="text-align:left">ACT_RE_DEPLOYMENT</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">5</td><td style="text-align:left">ACT_RE_PROCDEF</td></tr></tbody></table><hr><h1 id="ACT-ID"><a href="#ACT-ID" class="headerlink" title="ACT_ID"></a>ACT_ID</h1><table><thead><tr><th style="text-align:left">#</th><th style="text-align:left">Table</th><th style="text-align:left">Description</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">ACT_ID_GROUP</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">ACT_ID_INFO</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">ACT_ID_MEMBERSHIP</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">4</td><td style="text-align:left">ACT_ID_TENANT</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">5</td><td style="text-align:left">ACT_ID_TENANT_MEMBER</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">6</td><td style="text-align:left">ACT_ID_USER</td></tr></tbody></table><hr><h1 id="ACT-RU"><a href="#ACT-RU" class="headerlink" title="ACT_RU"></a>ACT_RU</h1><table><thead><tr><th style="text-align:left">#</th><th style="text-align:left">Table</th><th style="text-align:left">Description</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">ACT_RU_AUTHORIZATION</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">ACT_RU_BATCH</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">ACT_RU_CASE_EXECUTION</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">4</td><td style="text-align:left">ACT_RU_CASE_SENTRY_PART</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">5</td><td style="text-align:left">ACT_RU_EVENT_SUBSCR</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">6</td><td style="text-align:left">ACT_RU_EXECUTION</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">7</td><td style="text-align:left">ACT_RU_EXT_TASK</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">8</td><td style="text-align:left">ACT_RU_FILTER</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">9</td><td style="text-align:left">ACT_RU_IDENTITYLINK</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">10</td><td style="text-align:left">ACT_RU_INCIDENT</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">11</td><td style="text-align:left">ACT_RU_JOB</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">12</td><td style="text-align:left">ACT_RU_JOBDEF</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">13</td><td style="text-align:left">ACT_RU_METER_LOG</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">14</td><td style="text-align:left">ACT_RU_TASK</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">15</td><td style="text-align:left">ACT_RU_VARIABLE</td></tr></tbody></table><hr><h1 id="ACT-HI"><a href="#ACT-HI" class="headerlink" title="ACT_HI"></a>ACT_HI</h1><table><thead><tr><th style="text-align:left">#</th><th style="text-align:left">Table</th><th style="text-align:left">Description</th></tr></thead><tbody><tr><td style="text-align:left">1</td><td style="text-align:left">ACT_HI_ACTINST</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">2</td><td style="text-align:left">ACT_HI_ATTACHMENT</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">3</td><td style="text-align:left">ACT_HI_BATCH</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">4</td><td style="text-align:left">ACT_HI_CASEACTINST</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">5</td><td style="text-align:left">ACT_HI_CASEINST</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">6</td><td style="text-align:left">ACT_HI_COMMENT</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">7</td><td style="text-align:left">ACT_HI_DEC_IN</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">8</td><td style="text-align:left">ACT_HI_DEC_OUT</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">9</td><td style="text-align:left">ACT_HI_DECINST</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">10</td><td style="text-align:left">ACT_HI_DETAIL</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">11</td><td style="text-align:left">ACT_HI_EXT_TASK_LOG</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">12</td><td style="text-align:left">ACT_HI_IDENTITYLINK</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">13</td><td style="text-align:left">ACT_HI_INCIDENT</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">14</td><td style="text-align:left">ACT_HI_JOB_LOG</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">15</td><td style="text-align:left">ACT_HI_OP_LOG</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">16</td><td style="text-align:left">ACT_HI_PROCINST</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">17</td><td style="text-align:left">ACT_HI_TASKINST</td><td style="text-align:left"></td></tr><tr><td style="text-align:left">18</td><td style="text-align:left">ACT_HI_VARINST</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&quot;text-align:left&quot;&gt;#&lt;/th&gt;
-&lt;th style=&quot;text-align:left&quot;&gt;Table&lt;/th&gt;
-&lt;th style=&quot;text-align:left&quot;&gt;Description&lt;/th&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Gateways</title>
-    <link href="https://pickonefish.github.io/bpmn-gateways/"/>
-    <id>https://pickonefish.github.io/bpmn-gateways/</id>
-    <published>2020-12-15T18:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Gateways"><a href="#Gateways" class="headerlink" title="Gateways"></a>Gateways</h1><h2 id="Exclusive-gateway"><a href="#Exclusive-gateway" class="headerlink" title="Exclusive gateway"></a>Exclusive gateway</h2><blockquote><p>You use an exclusive gateway to model a decision in your process. When execution arrives at an exclusive gateway, the outgoing sequence flows are evaluated in the order in which they are defined. The first sequence flow whose condition evaluates to true, or which does not have a condition set, is selected and the process continues.</p></blockquote><h2 id="Parallel-gateway"><a href="#Parallel-gateway" class="headerlink" title="Parallel gateway"></a>Parallel gateway</h2><blockquote><p>You use a parallel gateway to model concurrency in a process. It allows you to fork multiple outgoing paths of execution or join multiple incoming paths of execution.</p></blockquote><h2 id="Inclusive-gateway"><a href="#Inclusive-gateway" class="headerlink" title="Inclusive gateway"></a>Inclusive gateway</h2><blockquote><p>You use an inclusive to join and fork multiple sequence flows based on conditions.</p></blockquote><h2 id="Event-based-gateway"><a href="#Event-based-gateway" class="headerlink" title="Event based gateway"></a>Event based gateway</h2><blockquote><p>You use an event gateway to route process flow based on events.</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Gateways&quot;&gt;&lt;a href=&quot;#Gateways&quot; class=&quot;headerlink&quot; title=&quot;Gateways&quot;&gt;&lt;/a&gt;Gateways&lt;/h1&gt;&lt;h2 id=&quot;Exclusive-gateway&quot;&gt;&lt;a href=&quot;#Exclusive-ga
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Events | Boundary Events | 邊界事件</title>
-    <link href="https://pickonefish.github.io/bpmn-events-boundary-events/"/>
-    <id>https://pickonefish.github.io/bpmn-events-boundary-events/</id>
-    <published>2020-12-14T18:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul><li><p>事件可以依【發生位置】與【特性】來分類</p><ul><li><p>以【發生位置】分為</p><ul><li>「開始事件」</li><li>「中間事件」<ul><li>可以再依【發生位置】劃分出「邊界事件」</li></ul></li><li>「結束事件」</li></ul></li><li><p>以【特性】分為</p><ul><li>「接收 (Catching) 事件」</li><li>「拋出 (Thowing) 事件」</li></ul></li></ul></li></ul><h1 id="Boundary-Events"><a href="#Boundary-Events" class="headerlink" title="Boundary Events"></a>Boundary Events</h1><p><strong>邊界事件</strong></p><ul><li><strong>附屬</strong> (依附) 於流程活動 (如：任務 Task、子流程 Sub-Process) 的事件。</li><li>屬於<ul><li>中間 (Intermediate) 事件</li><li>接收 (Catching) 事件</li></ul></li></ul><h2 id="Timer-Boundary-Event"><a href="#Timer-Boundary-Event" class="headerlink" title="Timer Boundary Event"></a>Timer Boundary Event</h2><p><strong>定時器邊界事件</strong></p><blockquote><p>A boundary timer event puts a timer on the activity it is defined on. When the timer fires, the sequence flow going out the boundary event is followed.</p></blockquote><ul><li><p>當流程到達 <font color="#008000"><strong>定時器邊界事件</strong></font> 所在的流程活動時，<br>經過 <u>所設定的時間後</u> 會觸發 <font color="#008000"><strong>定時器邊界事件</strong></font> ，<br>此時 <font color="#008000"><strong>定時器邊界事件</strong></font> 所在的任務會被中斷 (cancelActivity = true)，<br>流程會從 <font color="#008000"><strong>定時器邊界事件</strong></font> 離開，<br>走向 <font color="#008000"><strong>定時器邊界事件</strong></font> 所指向的另一個流程活動。</p></li><li><p>cancelActivity 屬性，用來設定是否中斷 定時器邊界事件 所在的任務</p><ul><li>true: 中斷 (<strong>可中斷</strong> 定時器邊界事件)</li><li>false: 不中斷 (<strong>不可中斷</strong> 定時器邊界事件)</li></ul></li></ul><!-- TODO: 流程圖 --><h2 id="Error-Boundary-Event"><a href="#Error-Boundary-Event" class="headerlink" title="Error Boundary Event"></a>Error Boundary Event</h2><p><strong>錯誤邊界事件</strong></p><blockquote><p>A boundary error event catches an error that is thrown within the boundaries of the activity the event is based on and continues process execution from the event.</p></blockquote><ul><li>用於接收子流程中拋出的錯誤</li><li>errorRef 屬性<ul><li>在錯誤邊界事件沒有使用 errorRef 屬性的情況下，錯誤邊界事件將接收所有的錯誤事件。</li><li>在錯誤邊界事件有使用 errorRef 屬性的情況下，錯誤邊界事件只會接收與指定的 errorCode 相同的 error</li></ul></li></ul><!-- TODO: 流程圖 --><h2 id="Signal-Boundary-Event"><a href="#Signal-Boundary-Event" class="headerlink" title="Signal Boundary Event"></a>Signal Boundary Event</h2><p><strong>信號邊界事件</strong></p><blockquote><p>A boundary signal event listens to a signal being fired (from within the process instance or system-wide) while the activity upon which the event is defined is active.</p></blockquote><!-- TODO: 流程圖 --><h2 id="Message-Boundary-Event"><a href="#Message-Boundary-Event" class="headerlink" title="Message Boundary Event"></a>Message Boundary Event</h2><p><strong>訊息邊界事件</strong></p><blockquote><p>A boundary message event listens to a message being received while the activity upon which the event is defined is active.</p></blockquote><!-- TODO: 流程圖 --><h2 id="Cancel-Boundary-Event"><a href="#Cancel-Boundary-Event" class="headerlink" title="Cancel Boundary Event"></a>Cancel Boundary Event</h2><p><strong>取消邊界事件</strong></p><!-- TODO: 流程圖 --><h2 id="Compensation-Boundary-Event"><a href="#Compensation-Boundary-Event" class="headerlink" title="Compensation Boundary Event"></a>Compensation Boundary Event</h2><p><strong>回饋邊界事件</strong></p><!-- TODO: 流程圖 -->]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;事件可以依【發生位置】與【特性】來分類&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;以【發生位置】分為&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;「開
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Events | Intermediate Catching Events | 中間接收事件</title>
-    <link href="https://pickonefish.github.io/bpmn-events-intermediate-catching-events/"/>
-    <id>https://pickonefish.github.io/bpmn-events-intermediate-catching-events/</id>
-    <published>2020-12-13T18:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Intermediate-catching-events"><a href="#Intermediate-catching-events" class="headerlink" title="Intermediate catching events"></a>Intermediate catching events</h1><h2 id="Message"><a href="#Message" class="headerlink" title="Message*"></a>Message*</h2><h2 id="Timer"><a href="#Timer" class="headerlink" title="Timer*"></a>Timer*</h2><h2 id="Conditional"><a href="#Conditional" class="headerlink" title="Conditional*"></a>Conditional*</h2><h2 id="Link"><a href="#Link" class="headerlink" title="Link*"></a>Link*</h2><h2 id="Signal"><a href="#Signal" class="headerlink" title="Signal*"></a>Signal*</h2><h2 id="Mutiple"><a href="#Mutiple" class="headerlink" title="Mutiple"></a>Mutiple</h2><h2 id="Parallel-Multiple"><a href="#Parallel-Multiple" class="headerlink" title="Parallel Multiple"></a>Parallel Multiple</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Intermediate-catching-events&quot;&gt;&lt;a href=&quot;#Intermediate-catching-events&quot; class=&quot;headerlink&quot; title=&quot;Intermediate catching events&quot;&gt;&lt;/a&gt;In
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Events | Intermediate throwing events | 中間拋出事件</title>
-    <link href="https://pickonefish.github.io/bpmn-events-intermediate-throwing-events/"/>
-    <id>https://pickonefish.github.io/bpmn-events-intermediate-throwing-events/</id>
-    <published>2020-12-12T18:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Intermediate-throwing-events"><a href="#Intermediate-throwing-events" class="headerlink" title="Intermediate throwing events"></a>Intermediate throwing events</h1><h2 id="None"><a href="#None" class="headerlink" title="None*"></a>None*</h2><h2 id="Message"><a href="#Message" class="headerlink" title="Message*"></a>Message*</h2><h2 id="Escalation"><a href="#Escalation" class="headerlink" title="Escalation*"></a>Escalation*</h2><h2 id="Compensation"><a href="#Compensation" class="headerlink" title="Compensation*"></a>Compensation*</h2><h2 id="Link"><a href="#Link" class="headerlink" title="Link*"></a>Link*</h2><h2 id="Signal"><a href="#Signal" class="headerlink" title="Signal*"></a>Signal*</h2><h2 id="Mutiple"><a href="#Mutiple" class="headerlink" title="Mutiple"></a>Mutiple</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Intermediate-throwing-events&quot;&gt;&lt;a href=&quot;#Intermediate-throwing-events&quot; class=&quot;headerlink&quot; title=&quot;Intermediate throwing events&quot;&gt;&lt;/a&gt;In
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Events | End Events | 結束事件</title>
-    <link href="https://pickonefish.github.io/bpmn-events-end-events/"/>
-    <id>https://pickonefish.github.io/bpmn-events-end-events/</id>
-    <published>2020-12-11T18:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="End-Events"><a href="#End-Events" class="headerlink" title="End Events"></a>End Events</h1><h2 id="None"><a href="#None" class="headerlink" title="None"></a>None</h2><h2 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h2><h2 id="Cancel"><a href="#Cancel" class="headerlink" title="Cancel"></a>Cancel</h2><h2 id="Termial"><a href="#Termial" class="headerlink" title="Termial"></a>Termial</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;End-Events&quot;&gt;&lt;a href=&quot;#End-Events&quot; class=&quot;headerlink&quot; title=&quot;End Events&quot;&gt;&lt;/a&gt;End Events&lt;/h1&gt;&lt;h2 id=&quot;None&quot;&gt;&lt;a href=&quot;#None&quot; class=&quot;head
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Events | Start Events | 開始事件</title>
-    <link href="https://pickonefish.github.io/bpmn-events-start-events/"/>
-    <id>https://pickonefish.github.io/bpmn-events-start-events/</id>
-    <published>2020-12-10T18:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Start-Events"><a href="#Start-Events" class="headerlink" title="Start Events"></a>Start Events</h1><h2 id="None"><a href="#None" class="headerlink" title="None"></a>None</h2><h2 id="Timer"><a href="#Timer" class="headerlink" title="Timer"></a>Timer</h2><h2 id="Message"><a href="#Message" class="headerlink" title="Message"></a>Message</h2><h2 id="Error"><a href="#Error" class="headerlink" title="Error"></a>Error</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Start-Events&quot;&gt;&lt;a href=&quot;#Start-Events&quot; class=&quot;headerlink&quot; title=&quot;Start Events&quot;&gt;&lt;/a&gt;Start Events&lt;/h1&gt;&lt;h2 id=&quot;None&quot;&gt;&lt;a href=&quot;#None&quot; cla
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Activities | Call Activity</title>
-    <link href="https://pickonefish.github.io/bpmn-activities-call-activity/"/>
-    <id>https://pickonefish.github.io/bpmn-activities-call-activity/</id>
-    <published>2020-12-09T16:00:03.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Call-Activity"><a href="#Call-Activity" class="headerlink" title="Call Activity"></a>Call Activity</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Call-Activity&quot;&gt;&lt;a href=&quot;#Call-Activity&quot; class=&quot;headerlink&quot; title=&quot;Call Activity&quot;&gt;&lt;/a&gt;Call Activity&lt;/h1&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Activities | Event Subprocess</title>
-    <link href="https://pickonefish.github.io/bpmn-activities-event-subprocess/"/>
-    <id>https://pickonefish.github.io/bpmn-activities-event-subprocess/</id>
-    <published>2020-12-08T16:00:04.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Event-Subprocess"><a href="#Event-Subprocess" class="headerlink" title="Event Subprocess"></a>Event Subprocess</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Event-Subprocess&quot;&gt;&lt;a href=&quot;#Event-Subprocess&quot; class=&quot;headerlink&quot; title=&quot;Event Subprocess&quot;&gt;&lt;/a&gt;Event Subprocess&lt;/h1&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Activities | Subprocess</title>
-    <link href="https://pickonefish.github.io/bpmn-activities-subprocess/"/>
-    <id>https://pickonefish.github.io/bpmn-activities-subprocess/</id>
-    <published>2020-12-07T16:00:02.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Subprocess"><a href="#Subprocess" class="headerlink" title="Subprocess"></a>Subprocess</h1>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Subprocess&quot;&gt;&lt;a href=&quot;#Subprocess&quot; class=&quot;headerlink&quot; title=&quot;Subprocess&quot;&gt;&lt;/a&gt;Subprocess&lt;/h1&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Activities | Tasks</title>
-    <link href="https://pickonefish.github.io/bpmn-activities-tasks/"/>
-    <id>https://pickonefish.github.io/bpmn-activities-tasks/</id>
-    <published>2020-12-06T16:00:01.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Tasks"><a href="#Tasks" class="headerlink" title="Tasks"></a>Tasks</h1><p>Task 在 BPMN 流程中是重要的元素, 當一個活動無法在細分更詳細時, 可以使用 Task. 通常是一個人或是應用程式將執行任務時執行 BPMN Task.</p><p>在 BPMN 2.0 中, 有各種 Task 代表更具體的行為.</p><h2 id="User-Task"><a href="#User-Task" class="headerlink" title="User Task"></a>User Task</h2><h2 id="Script-Task"><a href="#Script-Task" class="headerlink" title="Script Task"></a>Script Task</h2><h2 id="Service-Task"><a href="#Service-Task" class="headerlink" title="Service Task"></a>Service Task</h2><h2 id="Send-Task"><a href="#Send-Task" class="headerlink" title="Send Task"></a>Send Task</h2><h2 id="Business-Rule-Task"><a href="#Business-Rule-Task" class="headerlink" title="Business Rule Task"></a>Business Rule Task</h2><h2 id="Manual-Task"><a href="#Manual-Task" class="headerlink" title="Manual Task"></a>Manual Task</h2><h2 id="Receive-Task"><a href="#Receive-Task" class="headerlink" title="Receive Task"></a>Receive Task</h2><h2 id="Undefined-Task"><a href="#Undefined-Task" class="headerlink" title="Undefined Task"></a>Undefined Task</h2><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h2><ul><li><a href="https://www.visual-paradigm.com/guide/bpmn/bpmn-activity-types-explained/#bpmn-service-task" target="_blank" rel="noopener">https://www.visual-paradigm.com/guide/bpmn/bpmn-activity-types-explained/#bpmn-service-task</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Tasks&quot;&gt;&lt;a href=&quot;#Tasks&quot; class=&quot;headerlink&quot; title=&quot;Tasks&quot;&gt;&lt;/a&gt;Tasks&lt;/h1&gt;&lt;p&gt;Task 在 BPMN 流程中是重要的元素, 當一個活動無法在細分更詳細時, 可以使用 Task. 通常是一個人或是
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BPMN | Activities</title>
-    <link href="https://pickonefish.github.io/bpmn-activities/"/>
-    <id>https://pickonefish.github.io/bpmn-activities/</id>
-    <published>2020-12-05T16:00:00.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Activities"><a href="#Activities" class="headerlink" title="Activities"></a>Activities</h1><h2 id="BPMN-Task"><a href="#BPMN-Task" class="headerlink" title="BPMN Task"></a>BPMN Task</h2><h2 id="BPMN-Sub-Process"><a href="#BPMN-Sub-Process" class="headerlink" title="BPMN Sub-Process"></a>BPMN Sub-Process</h2><h2 id="BPMN-Call-Activity"><a href="#BPMN-Call-Activity" class="headerlink" title="BPMN Call Activity"></a>BPMN Call Activity</h2><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference:"></a>Reference:</h2><ul><li><a href="https://www.visual-paradigm.com/guide/bpmn/bpmn-activity-types-explained/#bpmn-service-task" target="_blank" rel="noopener">https://www.visual-paradigm.com/guide/bpmn/bpmn-activity-types-explained/#bpmn-service-task</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;Activities&quot;&gt;&lt;a href=&quot;#Activities&quot; class=&quot;headerlink&quot; title=&quot;Activities&quot;&gt;&lt;/a&gt;Activities&lt;/h1&gt;&lt;h2 id=&quot;BPMN-Task&quot;&gt;&lt;a href=&quot;#BPMN-Task&quot; c
-      
-    
-    </summary>
-    
-    
-      <category term="bpmn" scheme="https://pickonefish.github.io/tags/bpmn/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>kubernetes | Install</title>
-    <link href="https://pickonefish.github.io/kubernetes-install/"/>
-    <id>https://pickonefish.github.io/kubernetes-install/</id>
-    <published>2020-06-20T13:26:35.000Z</published>
-    <updated>2021-11-04T13:10:11.642Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Folders"><a href="#Folders" class="headerlink" title="Folders"></a>Folders</h2><p>/etc/kubernetes/</p><h2 id="set-hosts"><a href="#set-hosts" class="headerlink" title="set hosts"></a>set hosts</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ nano /etc/hosts</span><br><span class="line"></span><br><span class="line">192.168.1.58 master-node</span><br><span class="line">192.168.1.59 node-1 worker-node-1</span><br><span class="line">192.168.1.60 node-2 worker-node-2</span><br></pre></td></tr></table></figure><h2 id="Uninstall-Older-Version"><a href="#Uninstall-Older-Version" class="headerlink" title="Uninstall Older Version"></a>Uninstall Older Version</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum  -y remove  docker-common docker container-selinux docker-selinux docker-engine</span><br></pre></td></tr></table></figure><h2 id="Install-Dependent-Packages"><a href="#Install-Dependent-Packages" class="headerlink" title="Install Dependent Packages"></a>Install Dependent Packages</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum -y install lvm2 device-mapper device-mapper-persistent-data device-mapper-event device-mapper-libs device-mapper-event-libs</span><br></pre></td></tr></table></figure><h2 id="Add-Docker-Repository"><a href="#Add-Docker-Repository" class="headerlink" title="Add Docker Repository"></a>Add Docker Repository</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ curl https://download.docker.com/linux/centos/docker-ce.repo -o /etc/yum.repos.d/docker-ce.repo</span><br></pre></td></tr></table></figure><h2 id="Install-Docker"><a href="#Install-Docker" class="headerlink" title="Install Docker"></a>Install Docker</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum -y install docker-ce --nobest</span><br></pre></td></tr></table></figure><h2 id="start-the-Docker-service"><a href="#start-the-Docker-service" class="headerlink" title="start the Docker service"></a>start the Docker service</h2><p>Now you have Docker installed onto your machine, start the Docker service in case if it is not started automatically after the installation</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl start docker</span><br><span class="line"></span><br><span class="line">$ systemctl enable docker</span><br></pre></td></tr></table></figure><h2 id="Check-the-Docker-service"><a href="#Check-the-Docker-service" class="headerlink" title="Check the Docker service."></a>Check the Docker service.</h2><p>Check the Docker service.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl status docker</span><br></pre></td></tr></table></figure><h2 id="add-user-for-kube"><a href="#add-user-for-kube" class="headerlink" title="add user for kube"></a>add user for kube</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ adduser kube --shell /bin/bash</span><br><span class="line">$ passwd kube</span><br></pre></td></tr></table></figure><h2 id="disable-firewall"><a href="#disable-firewall" class="headerlink" title="disable firewall"></a>disable firewall</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl stop firewalld &amp; systemctl disable firewalld</span><br></pre></td></tr></table></figure><h2 id="開始佈署叢集前確保關閉-firewall-及-selinux"><a href="#開始佈署叢集前確保關閉-firewall-及-selinux" class="headerlink" title="開始佈署叢集前確保關閉 firewall 及 selinux"></a>開始佈署叢集前確保關閉 firewall 及 selinux</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ setenforce 0</span><br><span class="line"></span><br><span class="line">$ nano /etc/selinux/config</span><br><span class="line">SELINUX=disabled</span><br></pre></td></tr></table></figure><h1 id="Install-and-Initialize-Kubernetes-on-RedHat-8-CentOS-8"><a href="#Install-and-Initialize-Kubernetes-on-RedHat-8-CentOS-8" class="headerlink" title="Install and Initialize Kubernetes on RedHat 8 (CentOS 8)"></a>Install and Initialize Kubernetes on RedHat 8 (CentOS 8)</h1><h2 id="Add-Kubernetes-Repository"><a href="#Add-Kubernetes-Repository" class="headerlink" title="Add Kubernetes Repository"></a>Add Kubernetes Repository</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/yum.repos.d/kubernetes.repo</span><br><span class="line"></span><br><span class="line">[kubernetes]</span><br><span class="line">name=Kubernetes</span><br><span class="line">baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64</span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">repo_gpgcheck=1</span><br><span class="line">gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg</span><br></pre></td></tr></table></figure><h2 id="install-the-Kubernetes-and-enable-kubelet"><a href="#install-the-Kubernetes-and-enable-kubelet" class="headerlink" title="install the Kubernetes and enable kubelet"></a>install the Kubernetes and enable kubelet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ yum list kubectl kubelet kubeadm kubernetes-cni</span><br><span class="line">$ yum install -y kubelet kubeadm kubectl kubernetes-cni --disableexcludes=kubernetes --skip-broken</span><br><span class="line"></span><br><span class="line">$ systemctl enable --now kubelet</span><br></pre></td></tr></table></figure><p>## </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ nano /etc/sysctl.d/k8s.conf</span><br><span class="line"></span><br><span class="line">net.bridge.bridge-nf-call-ip6tables = 1</span><br><span class="line">net.bridge.bridge-nf-call-iptables = 1</span><br><span class="line"></span><br><span class="line">$ sysctl --system</span><br></pre></td></tr></table></figure><p>## </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ swapoff -a</span><br><span class="line"></span><br><span class="line">$ nano /etc/fstab</span><br><span class="line"></span><br><span class="line"># /dev/mapper/cl-swap</span><br></pre></td></tr></table></figure><p>@master node<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=192.168.1.58 --kubernetes-version stable-1.18</span><br><span class="line"></span><br><span class="line">$ cd ~</span><br><span class="line">$ mkdir .kube</span><br><span class="line">$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</span><br><span class="line">$ sudo chown $(id -u):$(id -g) $HOME/.kube/config</span><br></pre></td></tr></table></figure></p><h1 id="print-join-command"><a href="#print-join-command" class="headerlink" title="print join command"></a>print join command</h1><p>@master node<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ kubeadm token create --print-join-command</span><br><span class="line"></span><br><span class="line">kubeadm join 192.168.1.58:6443 --token kc62m0.h380cthvmsqz9lxm     --discovery-token-ca-cert-hash sha256:0434eb6ff6fd4a88682f40c135ba3572c34a39246fae0087512739a6f87c2e4e</span><br></pre></td></tr></table></figure></p><h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker pull quay.io/coreos/flannel:v0.12.0-amd64</span><br><span class="line">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/v0.12.0/Documentation/kube-flannel.yml</span><br></pre></td></tr></table></figure><h1 id="Install-Cluster-Networking-—-Overlay-Network"><a href="#Install-Cluster-Networking-—-Overlay-Network" class="headerlink" title="Install Cluster Networking — Overlay Network"></a>Install Cluster Networking — Overlay Network</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/2140ac876ef134e0ed5af15c65e414cf26827915/Documentation/kube-flannel.yml</span><br></pre></td></tr></table></figure><h1 id="Drain-Pod-Hosts-—-Delete-Nodes"><a href="#Drain-Pod-Hosts-—-Delete-Nodes" class="headerlink" title="Drain Pod Hosts — Delete Nodes"></a>Drain Pod Hosts — Delete Nodes</h1><p>You might encounter some situation for some reason, you want to tear down your worker nodes. Please use the following command on master node to drain your worker nodes first.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl drain &lt;node name&gt; --delete-local-data --force --ignore-daemonsets</span><br><span class="line">$ kubectl delete node &lt;node name&gt;</span><br></pre></td></tr></table></figure></p><p>Then, on the worker node being removed, reset all kubeadm installed state and please don’t forget reset your iptables as well.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ kubeadm reset</span><br><span class="line">$ iptables -F &amp;&amp; iptables -t nat -F &amp;&amp; iptables -t mangle -F &amp;&amp; iptables -X</span><br></pre></td></tr></table></figure><h1 id="Enable-kubectl-autocompletion"><a href="#Enable-kubectl-autocompletion" class="headerlink" title="Enable kubectl autocompletion"></a>Enable kubectl autocompletion</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ yum install bash-completion</span><br><span class="line">$ echo &apos;source &lt;(kubectl completion bash)&apos; &gt;&gt;~/.bashrc</span><br></pre></td></tr></table></figure><h1 id="Troubleshooting"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting</h1><h2 id="kube-proxy-config-遺失"><a href="#kube-proxy-config-遺失" class="headerlink" title="kube-proxy config 遺失"></a>kube-proxy config 遺失</h2><p>沒有 /var/lib/kube-proxy/config.conf</p><h1 id="CheatSheet"><a href="#CheatSheet" class="headerlink" title="CheatSheet"></a>CheatSheet</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">kubectl get cs</span><br><span class="line">kubectl get noodes</span><br><span class="line">kubectl get pods --all-namespace</span><br><span class="line">kubectl get svc</span><br><span class="line">kubectl -n kubernetes-dashboard get secret</span><br></pre></td></tr></table></figure><h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><ul><li><a href="https://medium.com/@liau.weijie/how-to-install-docker-and-kubernetes-cluster-on-redhat-8-centos-8-f774fc071e82" target="_blank" rel="noopener">https://medium.com/@liau.weijie/how-to-install-docker-and-kubernetes-cluster-on-redhat-8-centos-8-f774fc071e82</a></li><li><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/#enable-kubectl-autocompletion" target="_blank" rel="noopener">https://kubernetes.io/docs/tasks/tools/install-kubectl/#enable-kubectl-autocompletion</a></li><li><a href="https://kubernetes.feisky.xyz/introduction/101" target="_blank" rel="noopener">https://kubernetes.feisky.xyz/introduction/101</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Folders&quot;&gt;&lt;a href=&quot;#Folders&quot; class=&quot;headerlink&quot; title=&quot;Folders&quot;&gt;&lt;/a&gt;Folders&lt;/h2&gt;&lt;p&gt;/etc/kubernetes/&lt;/p&gt;
-&lt;h2 id=&quot;set-hosts&quot;&gt;&lt;a href=&quot;#
-      
-    
-    </summary>
-    
-    
-      <category term="kubernetes" scheme="https://pickonefish.github.io/tags/kubernetes/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ANGULAR | akveo/nebular 系列 - 6.7. Google OAuth 2.0 配置 | 中文</title>
     <link href="https://pickonefish.github.io/auth-oauth2/"/>
     <id>https://pickonefish.github.io/auth-oauth2/</id>
@@ -515,6 +181,197 @@
       
       
         &lt;p&gt;原文：&lt;a href=&quot;https://akveo.github.io/nebular/docs/auth/installation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://akveo.github.io/nebular/docs/a
+      
+    
+    </summary>
+    
+    
+      <category term="angular" scheme="https://pickonefish.github.io/tags/angular/"/>
+    
+      <category term="akveo/nebular" scheme="https://pickonefish.github.io/tags/akveo-nebular/"/>
+    
+      <category term="ngx-admin" scheme="https://pickonefish.github.io/tags/ngx-admin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ANGULAR | akveo/nebular 系列 - 6.1. 認證模組 | 中文</title>
+    <link href="https://pickonefish.github.io/auth-intro/"/>
+    <id>https://pickonefish.github.io/auth-intro/</id>
+    <published>2018-08-01T15:54:35.000Z</published>
+    <updated>2021-11-04T13:10:11.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>原文：<a href="https://akveo.github.io/nebular/docs/auth/introduction" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/auth/introduction</a></p><h1 id="認證模組"><a href="#認證模組" class="headerlink" title="認證模組"></a>認證模組</h1><p>認證模組主要目的是為了較容易設定 Angulr 應用程式的認證層而提供可外掛的元件組與服務。<br>這個模組分離 UI 部分（登入、註冊等 … ）以及在「認證 <code>策略</code> 層」幫助下的商業邏輯。</p><blockquote><p><strong>注意</strong><br>這個步驟仍然要與後端服務通訊</p></blockquote><h2 id="認證-UI-元件"><a href="#認證-UI-元件" class="headerlink" title="認證 UI 元件"></a>認證 UI 元件</h2><ul><li>登入</li><li>登出</li><li>註冊</li><li>密碼要求</li><li>密碼重置</li></ul><p>你可以選擇內建的元件或是客製化自己的元件。 </p><hr><h2 id="認證策略"><a href="#認證策略" class="headerlink" title="認證策略"></a>認證策略</h2><ul><li><code>NbDummyAuthStrategy</code> - 為了測試目的的簡單策略，當 API 還在開發階段時可以用於模擬後端的回應。</li><li><code>NbPasswordAuthStrategy</code> - 最常見的 email/login/password 認證策略。</li><li><code>NbOAuth2AuthStrategy</code> - 最受歡迎的認證框架使應用程式可以獲得在 HTTP 服務下受存取限制的使用者帳戶。 <hr></li></ul><h2 id="其他小幫手服務"><a href="#其他小幫手服務" class="headerlink" title="其他小幫手服務"></a>其他小幫手服務</h2><ul><li><code>NbAuthService</code> - 與「配置策略」互通的服務介面。</li><li><code>NbTokenService</code> - 允許您管理認證「通行證（token）」的服務；取得、設置、清除以及監聽隨時改變的通行證。</li><li><code>NbTokenLocalStorage</code> - 為儲存「通行證（token）」於瀏覽器 local storage 的儲存服務。</li><li><code>NbAuthJWTToken</code> 和 <code>NbAuthSimpleToken</code> - 與通行證工作的小幫手類別</li><li><code>NbAuthJWTInterceptor</code> 和 <code>NbAuthSimpleInterceptor</code> - http 「攔截器（interceptors）」 將「通行證（token）」注入至 http 請求。<hr></li></ul><h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul><li>Auth Module <a href="https://akveo.github.io/nebular/docs/auth/installation" target="_blank" rel="noopener">Installation</a> </li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;原文：&lt;a href=&quot;https://akveo.github.io/nebular/docs/auth/introduction&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://akveo.github.io/nebular/docs/a
+      
+    
+    </summary>
+    
+    
+      <category term="angular" scheme="https://pickonefish.github.io/tags/angular/"/>
+    
+      <category term="akveo/nebular" scheme="https://pickonefish.github.io/tags/akveo-nebular/"/>
+    
+      <category term="ngx-admin" scheme="https://pickonefish.github.io/tags/ngx-admin/"/>
+    
+      <category term="auth" scheme="https://pickonefish.github.io/tags/auth/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ANGULAR | akveo/nebular 系列 - 2.4. 啟用主題系統 | 中文</title>
+    <link href="https://pickonefish.github.io/enabling-theme-system/"/>
+    <id>https://pickonefish.github.io/enabling-theme-system/</id>
+    <published>2018-08-01T02:19:15.000Z</published>
+    <updated>2021-11-04T13:10:11.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>原文：<a href="https://akveo.github.io/nebular/docs/guides/enable-theme-system#advanced-setup" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/guides/enable-theme-system#advanced-setup</a></p><h1 id="啟用主題系統"><a href="#啟用主題系統" class="headerlink" title="啟用主題系統"></a>啟用主題系統</h1><blockquote><p><strong>注意</strong><br>如果您使用我們的 <a href="install-starter-kit">ngx-admin 入門套件</a> 那麼您已經有了進階設定。</p></blockquote><h2 id="基礎設定"><a href="#基礎設定" class="headerlink" title="基礎設定"></a>基礎設定</h2><p><strong>當</strong>：你只須要 Nebular 提供的預設樣式（宇宙樣式 cosmic 或是預設樣式 default），且不打算使用變數或是「熱載 hot-reload」 支援。</p><p>1) 那麼您只須要加入一個你想要使用的主題的 CSS 檔案到 <code>.angular-cli.json</code> 檔案像是:</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">"styles": [</span><br><span class="line">        <span class="string">"../node_modules/@nebular/theme/styles/prebuilt/cosmic.css"</span>, // 或是 default.css</span><br><span class="line">      ],</span><br></pre></td></tr></table></figure><p>就這樣！ 未來，如果您須要進階功能您可以簡單地從「一般設定步驟」或是「進階設定步驟」開始使用主題。</p><hr><h2 id="一般設定"><a href="#一般設定" class="headerlink" title="一般設定"></a>一般設定</h2><p><strong>當</strong>：您希望在您的程式碼中使用主題系統並且能夠更改變數時。</p><p><em>注意</em>：這個設定可能看起來有點冗長，遺憾的是 angular-cli 對客製化配置的支援有限；希望未來的版本和外掛支援可以大大簡化。</p><p>1) 使用 Nebular 主題宣告建立一個 <code>themes.scss</code> 檔案。我們假設這個主題是以 <code>default</code> 主題為基礎，所以依然命名為 <code>default</code>。</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 匯入 Nebular 主題系統以及 default 主題</span></span><br><span class="line">@<span class="keyword">import</span> <span class="string">'~@nebular/theme/styles/theming'</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">'~@nebular/theme/styles/themes/default'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 改變你想要改變的變數或是不設定變數而保留預設值。預設值為白色，讓我們把它變成藍色。</span></span><br><span class="line"><span class="variable">$nb-themes</span>: nb-register-theme((</span><br><span class="line">  color-bg: <span class="number">#4ca6ff</span>,</span><br><span class="line">  shadow: <span class="number">0</span> <span class="number">1px</span> <span class="number">2px</span> <span class="number">0</span> <span class="number">#3780c0</span>,</span><br><span class="line">  layout-bg: <span class="number">#ffffff</span>,</span><br><span class="line">  color-fg: <span class="number">#222222</span></span><br><span class="line">), default, default); </span><br><span class="line"><span class="comment">// 第一個 default 為新主題的名稱；第二 default 為以 Nebular 提供的 default 主題為基礎。</span></span><br></pre></td></tr></table></figure><p>2) 現在找到您的 <code>styles.scss</code> (或者建立一個然後加入到 <code>.angular-cli.json</code> 的 <code>&quot;styles&quot;: [..]</code> 之下) 並且根據以下程式碼貼上：</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 這是您建立的 themes.scss 檔，請確認路徑正確</span></span><br><span class="line">@<span class="keyword">import</span> <span class="string">'themes'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 框架的元件樣式將使用您的新主題</span></span><br><span class="line">@<span class="keyword">import</span> <span class="string">'~@nebular/theme/styles/globals'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 安裝框架</span></span><br><span class="line">@<span class="keyword">include</span> nb-install() &#123;</span><br><span class="line">  @<span class="keyword">include</span> nb-theme-global();</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>3) 在這個步驟，您已經可以自訂變數以變更元件的外觀與行為。為了能夠將這些（或是新的） 變數使用於客製化的元件中，只需要在任何 <code>*.component.scss</code> 中加入一行 <code>import</code> 。</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">'../../../@theme/styles/themes'</span>;</span><br><span class="line"></span><br><span class="line">:host &#123;</span><br><span class="line"></span><br><span class="line">  background: nb-theme(card-bg); <span class="comment">// 然後使用這個主題</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p><strong>注意</strong><br>只需要呼叫 <code>nb-theme(variable-name)</code> 函數即可存取變數.</p></blockquote><p>這個步驟您將得到類似下圖的內容：</p><p><img src="/assets/images/articles/blue-theme.png" alt="image"></p><hr><h2 id="進階設定"><a href="#進階設定" class="headerlink" title="進階設定"></a>進階設定</h2><p><strong>當</strong>：您須要在 run-time 時在多個主題中切換主題時</p><p>這個步驟假設您已經完成 <em>一般設定</em> 步驟.</p><p>1) 假設您已經有一個來自前一個步驟產生的 <code>default</code> 主題的 <code>themes.scss</code> 檔案，讓我們加入一個新的主題，以 Nebular 的 <code>cosmic</code> 主題為基礎並且命名為 <code>dark</code>:</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">// 加上 cosmic 主題 import 在原有的 default 主題之下;</span></span><br><span class="line">@<span class="keyword">import</span> <span class="string">'~@nebular/theme/styles/themes/cosmic'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 並將兩個主題都標記為啟用</span></span><br><span class="line"><span class="variable">$nb-enabled-themes</span>: (default, dark);</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment">// 改變你想要改變的變數或是不設定變數而保留預設值。預設值為宇宙色，讓我們把它變成黑暗色。</span></span><br><span class="line"><span class="variable">$nb-themes</span>: nb-register-theme((</span><br><span class="line"></span><br><span class="line">  color-bg: <span class="number">#222222</span>,</span><br><span class="line">  shadow: <span class="number">0</span> <span class="number">1px</span> <span class="number">2px</span> <span class="number">0</span> <span class="number">#000000</span>,</span><br><span class="line">  color-fg: <span class="number">#303030</span>,</span><br><span class="line">  layout-bg: <span class="number">#ededed</span>,</span><br><span class="line">), dark, cosmic);</span><br></pre></td></tr></table></figure><p>所以您的 <code>themes.scss</code> 檔案會看起來是：</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">'~@nebular/theme/styles/theming'</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">'~@nebular/theme/styles/themes/default'</span>;</span><br><span class="line">@<span class="keyword">import</span> <span class="string">'~@nebular/theme/styles/themes/cosmic'</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">$nb-enabled-themes</span>: (default, dark);</span><br><span class="line"></span><br><span class="line"><span class="comment">// default 主題</span></span><br><span class="line"><span class="variable">$nb-themes</span>: nb-register-theme((</span><br><span class="line"></span><br><span class="line">  color-bg: <span class="number">#4ca6ff</span>,</span><br><span class="line">  shadow: <span class="number">0</span> <span class="number">1px</span> <span class="number">2px</span> <span class="number">0</span> <span class="number">#3780c0</span>,</span><br><span class="line">  layout-bg: <span class="number">#ffffff</span>,</span><br><span class="line">  color-fg: <span class="number">#222222</span>,</span><br><span class="line">), default, default);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// dark 主題</span></span><br><span class="line"><span class="variable">$nb-themes</span>: nb-register-theme((</span><br><span class="line"></span><br><span class="line">  color-bg: <span class="number">#222222</span>,</span><br><span class="line">  shadow: <span class="number">0</span> <span class="number">1px</span> <span class="number">2px</span> <span class="number">0</span> <span class="number">#000000</span>,</span><br><span class="line">  color-fg: <span class="number">#303030</span>,</span><br><span class="line">  layout-bg: <span class="number">#ededed</span>,</span><br><span class="line">), dark, cosmic);</span><br></pre></td></tr></table></figure><p>此時啟用您的 <code>dark</code> 主題您的頁面會看起來像是：</p><p><img src="/assets/images/articles/dark-theme.png" alt="image"></p><p>2) 現在啟用「熱載　<code>hot reload</code>」的魔術，打包您所有含有 <code>nb-install-component</code> 的 <code>*.component.scss</code> 樣式 像是：</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">'../../../@theme/styles/themes'</span>;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">include</span> nb-install-component() &#123;</span><br><span class="line">  <span class="attribute">background</span>: nb-theme(card-bg); <span class="comment">// 對於每一個被註冊的主題鑲嵌相對應的值</span></span><br><span class="line">  </span><br><span class="line">  <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: nb-theme(color-bg);</span><br><span class="line">    <span class="attribute">font-weight</span>: nb-theme(font-weight-bold);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p><strong>注意</strong><br>這個 <strong>install-component</strong> SCSS mixin ‘已經涵蓋了’ 宣告在程式碼中的 <strong>:host</strong>，意思是你不需要在 <strong>@include nb-install-component() {</strong> 中而外宣告一個 <strong>:host</strong> 並且樣式也會正確的渲染到這個 <code>host</code>。</p></blockquote><p>完成，你可以在 run-time 時改變主題。以下是如何從元件中執行這個操作：</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用主題服務</span></span><br><span class="line">constructor(private themeService: NbThemeService) &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 改變成 `dark`</span><br><span class="line">enableDarkTheme() &#123;</span><br><span class="line">  this.themeService.changeTheme(<span class="string">'dark'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul><li><a href="https://akveo.github.io/nebular/docs/guides/theme-system" target="_blank" rel="noopener">Theme System Concepts</a>.</li><li><a href="https://akveo.github.io/nebular/docs/themes/default" target="_blank" rel="noopener">Default Theme variables table</a>.</li><li><a href="https://akveo.github.io/nebular/docs/themes/cosmic" target="_blank" rel="noopener">Cosmic Theme variables table</a>.</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;原文：&lt;a href=&quot;https://akveo.github.io/nebular/docs/guides/enable-theme-system#advanced-setup&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://akveo.
+      
+    
+    </summary>
+    
+    
+      <category term="angular" scheme="https://pickonefish.github.io/tags/angular/"/>
+    
+      <category term="akveo/nebular" scheme="https://pickonefish.github.io/tags/akveo-nebular/"/>
+    
+      <category term="ngx-admin" scheme="https://pickonefish.github.io/tags/ngx-admin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ANGULAR | akveo/nebular 系列 - 2.3. Nebular 主題系統 | 中文</title>
+    <link href="https://pickonefish.github.io/concept-theme-system/"/>
+    <id>https://pickonefish.github.io/concept-theme-system/</id>
+    <published>2018-07-30T01:26:05.000Z</published>
+    <updated>2021-11-04T13:10:11.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>原文：<a href="https://akveo.github.io/nebular/docs/guides/theme-system#nebular-theme-system" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/guides/theme-system#nebular-theme-system</a></p><h1 id="Nebular-主題系統"><a href="#Nebular-主題系統" class="headerlink" title="Nebular 主題系統"></a>Nebular 主題系統</h1><p>Nebular 主題系統是一套規則， 我們將如何組織 SCSS 文件和變數以實現以下目標:</p><ul><li>能夠透過管理變數不需要改變 SCSS 的前提下，能夠靈活地改變應用程式的產品外觀。</li><li>能夠在 runtime 時不需要重新載入頁面而切換視覺主題。</li><li>支援 CSS 變數 (部分實現)。<hr></li></ul><h2 id="Theme-對應表"><a href="#Theme-對應表" class="headerlink" title="Theme 對應表"></a>Theme 對應表</h2><p>每個主題都被表示為一個 SCSS map 並帶有「鍵值對」的清單：</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$theme</span>: (</span><br><span class="line">  font-main: unquote(<span class="string">'"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'</span>),</span><br><span class="line">  font-secondary: font-main,</span><br><span class="line"></span><br><span class="line">  font-weight-thin: <span class="number">200</span>,</span><br><span class="line">  font-weight-light: <span class="number">300</span>,</span><br><span class="line">  font-weight-normal: <span class="number">400</span>,</span><br><span class="line">  font-weight-bolder: <span class="number">500</span>,</span><br><span class="line">  font-weight-bold: <span class="number">600</span>,</span><br><span class="line">  font-weight-ultra-bold: <span class="number">800</span>,</span><br><span class="line"></span><br><span class="line">  base-font-size: <span class="number">16px</span>,</span><br><span class="line"></span><br><span class="line">  font-size-xlg: <span class="number">1.25rem</span>,</span><br><span class="line">  font-size-lg: <span class="number">1.125rem</span>,</span><br><span class="line">  font-size: <span class="number">1rem</span>,</span><br><span class="line">  font-size-sm: <span class="number">0.875rem</span>,</span><br><span class="line">  font-size-xs: <span class="number">0.75rem</span>,</span><br><span class="line"></span><br><span class="line">  radius: <span class="number">0.375rem</span>,</span><br><span class="line">  padding: <span class="number">1.25rem</span>,</span><br><span class="line">  margin: <span class="number">1.5rem</span>,</span><br><span class="line">  line-height: <span class="number">1.25</span>,</span><br><span class="line">  </span><br><span class="line">  ...</span><br></pre></td></tr></table></figure><p>其中 <em>key</em> 是變數名稱而 <em>value</em> 是 SCSS 的原始值 (像是 color、string 等 …) 或 <strong>父親變數名稱</strong> 以便您可以繼承不同變數的值:</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$theme</span>: (</span><br><span class="line">  font-main: unquote(<span class="string">'"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'</span>),</span><br><span class="line">  font-secondary: font-main,</span><br></pre></td></tr></table></figure><p>這裡的 <code>font-secondary</code> 繼承來自 <code>font-main</code> 的值.</p><hr><h2 id="元件的樣式變數"><a href="#元件的樣式變數" class="headerlink" title="元件的樣式變數"></a>元件的樣式變數</h2><p>有一個變數清單，您可以為 Nebular 的每一個元件作修改<br>例如 - header 元件變數如下：</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">header</span>-<span class="attribute">font-family</span>: font-secondary,</span><br><span class="line">header-font-size: font-size,</span><br><span class="line">header-line-height: line-height,</span><br><span class="line">header-fg: color-fg-heading,</span><br><span class="line">header-bg: color-bg,</span><br><span class="line">header-height: <span class="number">4.75rem</span>,</span><br><span class="line">header-padding: <span class="number">1.25rem</span>,</span><br><span class="line">header-shadow: shadow,</span><br><span class="line"></span><br><span class="line">...</span><br></pre></td></tr></table></figure><p>如您所見，有一組簡單元件的 8 個變數，其中有 6 個變數繼承主題變數的預設值。<br>意味著，您可以建立一個全新且統一的元件產品外觀，在大部分情況下您只需要改變大約 10 個通用變數像是 <code>color-bg</code> 、 <code>shadow</code> 等，即可完全改變 UI。</p><p>元件樣式變數清單被指定於「元件文件」中，例如 <a href="https://akveo.github.io/nebular/docs/components/layout/theme#nblayoutcomponent" target="_blank" rel="noopener">styles for header component</a>.</p><hr><h2 id="樣式變數的用法"><a href="#樣式變數的用法" class="headerlink" title="樣式變數的用法"></a>樣式變數的用法</h2><p>如果您想使用變數在您客製化的樣式檔案，您只須要做的是呼叫 <code>nb-theme(var-name)</code> function (在 <a href="https://akveo.github.io/nebular/docs/guides/enabling-theme-system" target="_blank" rel="noopener">successful setup of the Theme System</a> 詳細介紹</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">'../../../@theme/styles/themes'</span>;</span><br><span class="line"></span><br><span class="line">:host &#123;</span><br><span class="line"></span><br><span class="line">  background: nb-theme(card-bg); <span class="comment">// and use it</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>根據目前已經啟用的主題在您的主題檔案中繼承 <code>card-bg</code> 變數，您將得到正確的顏色。</p><hr><h2 id="已內建的主題"><a href="#已內建的主題" class="headerlink" title="已內建的主題"></a>已內建的主題</h2><p>目前有 3 個內建的主題：</p><ul><li><code>default</code> - 清晰的白色主題</li><li><code>cosmic</code> - 黑暗的主題</li><li><code>corporate</code> - 商業主題</li></ul><p>這些主題也可以互相繼承例如 <code>cosmic</code>　就是繼承於 <code>default</code> 主題.</p><hr><h2 id="「熱載-hot-reload」-多個主題的魔力"><a href="#「熱載-hot-reload」-多個主題的魔力" class="headerlink" title="「熱載 hot-reload」 多個主題的魔力"></a>「熱載 hot-reload」 多個主題的魔力</h2><p>您可以在 <a href="http://akveo.com/ngx-admin?utm_source=nebular_documentation&amp;utm_medium=doc_page" target="_blank" rel="noopener">ngx-admin demo</a> 看到，您可以切換主題而不需要重新載入頁面。<br>當每個使用者有多的視覺主題時或者您希望提供您的使用者這樣的配置，以便他可以決定哪一個主題最適合他時，這是很有用的。<br>這個功能唯一的要求是將您所有的元件樣式包裝在一個特定的 <code>nb-install-component</code> 中，並使用 <code>nb-theme</code> 取得正確的值:</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">import</span> <span class="string">'../../../@theme/styles/themes'</span>;</span><br><span class="line"></span><br><span class="line">@<span class="keyword">include</span> nb-install-component() &#123;</span><br><span class="line">  <span class="attribute">background</span>: nb-theme(card-bg); <span class="comment">// 對於每一個被註冊的主題鑲嵌相對應的值</span></span><br><span class="line">  </span><br><span class="line">  <span class="selector-class">.container</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: nb-theme(color-bg);</span><br><span class="line">    <span class="attribute">font-weight</span>: nb-theme(font-weight-bold);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul><li><a href="/enabling-theme-system">啟用主題系統</a></li><li><a href="https://akveo.github.io/nebular/docs/themes/default" target="_blank" rel="noopener">Default Theme variables table</a></li><li><a href="https://akveo.github.io/nebular/docs/themes/cosmic" target="_blank" rel="noopener">Cosmic Theme variables table</a></li><li><a href="https://akveo.github.io/nebular/docs/themes/corporate" target="_blank" rel="noopener">Corporate Theme variables table</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;原文：&lt;a href=&quot;https://akveo.github.io/nebular/docs/guides/theme-system#nebular-theme-system&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://akveo.g
+      
+    
+    </summary>
+    
+    
+      <category term="angular" scheme="https://pickonefish.github.io/tags/angular/"/>
+    
+      <category term="akveo/nebular" scheme="https://pickonefish.github.io/tags/akveo-nebular/"/>
+    
+      <category term="ngx-admin" scheme="https://pickonefish.github.io/tags/ngx-admin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ANGULAR | akveo/nebular 系列 - 2.2. 安裝 nebular 到現有專案 | 中文</title>
+    <link href="https://pickonefish.github.io/install-into-existing/"/>
+    <id>https://pickonefish.github.io/install-into-existing/</id>
+    <published>2018-07-20T09:00:00.000Z</published>
+    <updated>2021-11-04T13:10:11.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>原文：<a href="https://akveo.github.io/nebular/docs/guides/add-into-existing-project#add-into-existing-project" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/guides/add-into-existing-project#add-into-existing-project</a></p><h1 id="安裝-nebular-到現有專案"><a href="#安裝-nebular-到現有專案" class="headerlink" title="安裝 nebular 到現有專案"></a>安裝 nebular 到現有專案</h1><p>如果你還沒有任何 angular 程式碼，請考慮查閱 <a href="https://cli.angular.io" target="_blank">Angular CLI</a> 文件，以幫助你建立 app。如果你想以我們 <code>ngx-admin</code> 入門套件為基礎，請查看 <a href="3.akveo-nebular-install-starter-kit">ANGULAR | akveo/nebular 系列 - 3. 入門套件 | 中文</a> 文章。</p><blockquote><p><strong>使用 ngx-admin 客製化元件</strong><br>請注意這個指南說明如何安裝 Nebular 模組到您的專案，包含主題系統、認證工具、UI 工具。<br>如果你想要重複使用 ngx-admin 的任何 <strong>客製化</strong> 元件(像是溫度小工具、儀表板圖表等 …) 不在使用 ngx-admin 本身時，請根據這個指南以及最後你只需要複製任何你需要的 ngx-admin 客製化元件到你的專案，並且註冊「主題模組」到你的模組中就可以了。</p></blockquote><h2 id="安裝相依函式庫"><a href="#安裝相依函式庫" class="headerlink" title="安裝相依函式庫"></a>安裝相依函式庫</h2><p>這個步驟，我們假設您已經安裝 Angular 模組。現在讓我們安裝 Angualr Bootstrap 如下：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -S bootstrap</span><br></pre></td></tr></table></figure><hr><h2 id="安裝-Nebular-模組"><a href="#安裝-Nebular-模組" class="headerlink" title="安裝 Nebular 模組"></a>安裝 Nebular 模組</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -S @nebular/theme @nebular/auth @nebular/security</span><br></pre></td></tr></table></figure><p>如果在您的專案中不須要認證/安全的部分，您可以在上方的指令刪除 <code>@nebular/auth</code> 和 <code>@nebular/security</code>。</p><hr><h2 id="配置-Nebular"><a href="#配置-Nebular" class="headerlink" title="配置 Nebular"></a>配置 Nebular</h2><p>在這個階段您已經一切到位了，讓我們配置 Nebular 到 app 模組中。</p><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> &#123; NbThemeModule &#125; <span class="keyword">from</span> <span class="string">'@nebular/theme'</span>;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="meta">@NgModule</span>(&#123;</span><br><span class="line">  imports: [</span><br><span class="line">    ...</span><br><span class="line">    NbThemeModule.forRoot(&#123; name: <span class="string">'default'</span> &#125;), <span class="comment">// this will enable the default theme, you can change this to `cosmic` to enable the dark theme</span></span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> AppModule &#123;</span><br></pre></td></tr></table></figure><p>以同樣的方式啟動 Auth 模組 (更多詳細內容在 <a href="https://akveo.github.io/nebular/docs/auth/conceptsinstall" target="_blank" rel="noopener">Auth Module Concepts &amp; Install</a> 文章).</p><hr><h2 id="安裝樣式"><a href="#安裝樣式" class="headerlink" title="安裝樣式"></a>安裝樣式</h2><p>現在讓我們引用 Nebular 樣式</p><p>包含 Bootstrap 以及 Nebular 預設主題 CSS 檔案到您的 <code>.angular-cli.json</code> 檔案中:</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">"styles": [</span><br><span class="line">  <span class="string">"../node_modules/bootstrap/dist/css/bootstrap.css"</span>,</span><br><span class="line">  <span class="string">"../node_modules/@nebular/theme/styles/prebuilt/default.css"</span>, // or cosmic.css</span><br><span class="line">],</span><br></pre></td></tr></table></figure><blockquote><p><strong>主題系統進階配置</strong><br>本文章我們描述非常基礎的樣式安裝。如果你需要更多進階功能，像是主題變數管理或是多個主題交換請查閱 <a href="https://akveo.github.io/nebular/docs/guides/enable-theme-system" target="_blank" rel="noopener">Enabling Theme System</a> 文章.</p></blockquote><h2 id="建立一個頁面"><a href="#建立一個頁面" class="headerlink" title="建立一個頁面"></a>建立一個頁面</h2><p>現在讓我們在您的專案中建立一個簡單的 Nebular 頁面 (header + sidebar)。我們假設每一頁面有一個模組，讓我們打開您的  <code>some-page.module.ts</code> 以及引用佈局元件 (layout components):</p><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; RouterModule &#125; <span class="keyword">from</span> <span class="string">'@angular/router'</span>; <span class="comment">// we also need angular router for Nebular to function properly</span></span><br><span class="line"><span class="keyword">import</span> &#123; NbSidebarModule, NbLayoutModule, NbSidebarService &#125; <span class="keyword">from</span> <span class="string">'@nebular/theme'</span>;</span><br><span class="line"></span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="meta">@NgModule</span>(&#123;</span><br><span class="line">  ...</span><br><span class="line">  imports: [</span><br><span class="line">    RouterModule, <span class="comment">// RouterModule.forRoot(routes, &#123; useHash: true &#125;), if this is your app.module</span></span><br><span class="line">    NbLayoutModule,</span><br><span class="line">    NbSidebarModule,</span><br><span class="line">  ],</span><br><span class="line">  providers: [NbSidebarService], <span class="comment">// we need this service for the sidebar</span></span><br><span class="line">  ...</span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> SomePageModule &#123;</span><br></pre></td></tr></table></figure><p>然後我們加入佈局元件 (layout components) 以及標題到您的 <code>some-page.component.ts</code>:<br><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span>(&#123;</span><br><span class="line">  ...</span><br><span class="line">  template: <span class="string">`</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">    &lt;nb-layout&gt;</span></span><br><span class="line"><span class="string">      &lt;nb-layout-header fixed&gt;Company Name&lt;/nb-layout-header&gt;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">      &lt;nb-sidebar&gt;Sidebar Content&lt;/nb-sidebar&gt;</span></span><br><span class="line"><span class="string">      </span></span><br><span class="line"><span class="string">      &lt;nb-layout-column&gt;Page Content&lt;/nb-layout-column&gt;</span></span><br><span class="line"><span class="string">    &lt;/nb-layout&gt;</span></span><br><span class="line"><span class="string">  `</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> SomePageComponent &#123;</span><br></pre></td></tr></table></figure></p><p>完成! 在這個步驟你應該有個擁有簡單佈局的頁面如下所是：</p><p><img src="/assets/images/articles/sample-page.png" alt="image"></p><hr><blockquote><p><strong>加入到現有的 page 中</strong><br>如果您的頁面已經有一些程式碼了，您希望與 Nebular 元件合併使用。<br>您須要將頁面程式碼放置到這個 Nebular 佈局中。<code>&lt;nb-layout&gt;&lt;/nb-layout&gt;</code> 是 Nebular 工作所需的根元件。</p></blockquote><h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul><li><a href="https://akveo.github.io/nebular/docs/guides/enable-theme-system" target="_blank" rel="noopener">Advanced Theme System configuration</a></li><li><a href="https://akveo.github.io/nebular/docs/guides/components-overview#advanced-setup" target="_blank" rel="noopener">Nebular UI Kit</a></li><li><a href="https://akveo.github.io/nebular/docs/components/layout" target="_blank" rel="noopener">NbLayout, NbLayoutColumn, NbLayoutHeader, NbLayoutFooter</a></li><li><a href="https://akveo.github.io/nebular/docs/guides/server-deployment" target="_blank" rel="noopener">Deploying to production server</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;原文：&lt;a href=&quot;https://akveo.github.io/nebular/docs/guides/add-into-existing-project#add-into-existing-project&quot; target=&quot;_blank&quot; rel=&quot;noopene
+      
+    
+    </summary>
+    
+    
+      <category term="angular" scheme="https://pickonefish.github.io/tags/angular/"/>
+    
+      <category term="akveo/nebular" scheme="https://pickonefish.github.io/tags/akveo-nebular/"/>
+    
+      <category term="ngx-admin" scheme="https://pickonefish.github.io/tags/ngx-admin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ANGULAR | akveo/nebular 系列 - 2.1. 安裝入門套件 | 中文</title>
+    <link href="https://pickonefish.github.io/install-starter-kit/"/>
+    <id>https://pickonefish.github.io/install-starter-kit/</id>
+    <published>2018-07-20T08:00:00.000Z</published>
+    <updated>2021-11-04T13:10:11.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>原文：<a href="https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit#install-based-on-starter-kit" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit#install-based-on-starter-kit</a></p><h1 id="安裝入門套件"><a href="#安裝入門套件" class="headerlink" title="安裝入門套件"></a>安裝入門套件</h1><p>可以從 <a href="https://github.com/akveo/ngx-admin/" target="_blank">ngx-admin</a> 入門套件開始 Nebular 是最簡單的方法執行您的第一個 Nebular 應用程式。</p><p><strong>ngx-admin</strong> 只是一個前端應用程式，後端整合可以做地相對簡單，但請注意目前資料都使用 Javascript 物件模擬。<br>如果您想要動態取得資料，您應該考慮自己開發一個後端整合。<br>Nebular 團隊不提供通用的「整合層」作為這個專案的一部分，因為每個後端 API 在資料格式和 URLs 有不同的結構。</p><hr><h2 id="安裝工具"><a href="#安裝工具" class="headerlink" title="安裝工具"></a>安裝工具</h2><p>安裝 ngx-admin 到您的機器上前您需要先安裝以下工具:</p><ul><li>Git - <a href="https://git-scm.com" target="_blank">https://git-scm.com</a></li><li>Node.js - <a href="https://nodejs.org" target="_blank">https://nodejs.org</a>. 請注意 <strong>版本</strong> 應該是 <strong>&gt;=8</strong></li><li>Npm - Node.js package manager 是伴隨著 Node.js. 請確認 npm <strong>版本</strong> 是 <strong>&gt;=5</strong></li><li>您可能還需要一些特定的本機軟體包，具體取決於您的操作系統，像是在 Ubuntu 上需要 <code>build-essential</code>。</li></ul><blockquote><p><strong>警告!</strong><br>請注意到因為 Angular 的建構方式 <strong>沒有這些工具</strong> 是 <strong>不能</strong> 建置 ngx-admin 的。</p></blockquote><h2 id="下載程式碼"><a href="#下載程式碼" class="headerlink" title="下載程式碼"></a>下載程式碼</h2><p>當你完成工具的設置後，你需要下載 <code>ngx-admin</code> 應用程式的程式碼。最簡單的方式是複製 GitHub repository:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/akveo/ngx-admin.git</span><br></pre></td></tr></table></figure></p><p>在複製完成後，你需要安裝 npm 模組:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ngx-admin &amp;&amp; npm i</span><br></pre></td></tr></table></figure></p><blockquote><p><strong>警告!</strong><br>請確認沒有錯誤的，成功地完成安裝。</p></blockquote><h2 id="執行本地副本"><a href="#執行本地副本" class="headerlink" title="執行本地副本"></a>執行本地副本</h2><p>於開發模式下執行本地副本可以執行:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm start</span><br></pre></td></tr></table></figure><p>Go to <a href="http://0.0.0.0:4200" target="_blank">http://0.0.0.0:4200</a> or <a href="http://localhost:4200" target="_blank">http://localhost:4200</a> in your browser.</p><hr><h2 id="建立產品包"><a href="#建立產品包" class="headerlink" title="建立產品包"></a>建立產品包</h2><p>於產品模式下建立一個產品包可以執行:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build:prod</span><br></pre></td></tr></table></figure><p>這將會清除您的 <code>dist</code> 目錄 (放置 release 檔案的地方) 以及產生一個 release 建置。<br>現在您可以複製這些來自 <code>dist</code> 目錄的檔案以及將他們部署到後端框架或者簡單地 <a href="9.server-deployment">放置於網頁伺服器</a>。</p><hr><h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul><li><a href="https://akveo.github.io/nebular/docs/guides/server-deployment" target="_blank" rel="noopener">部署到產品伺服器</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;原文：&lt;a href=&quot;https://akveo.github.io/nebular/docs/guides/install-based-on-starter-kit#install-based-on-starter-kit&quot; target=&quot;_blank&quot; rel=&quot;n
+      
+    
+    </summary>
+    
+    
+      <category term="angular" scheme="https://pickonefish.github.io/tags/angular/"/>
+    
+      <category term="akveo/nebular" scheme="https://pickonefish.github.io/tags/akveo-nebular/"/>
+    
+      <category term="ngx-admin" scheme="https://pickonefish.github.io/tags/ngx-admin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ANGULAR | akveo/nebular 系列 - 1.2. 開始 nebular | 中文</title>
+    <link href="https://pickonefish.github.io/start/"/>
+    <id>https://pickonefish.github.io/start/</id>
+    <published>2018-07-20T07:31:00.000Z</published>
+    <updated>2021-11-04T13:10:11.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>原文：<a href="https://akveo.github.io/nebular/docs/getting-started/where-to-start#where-to-start" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/getting-started/where-to-start#where-to-start</a></p><h1 id="從哪裡開始"><a href="#從哪裡開始" class="headerlink" title="從哪裡開始?"></a>從哪裡開始?</h1><p>Nebular 是針對 <a href="https://angular.io/" target="_blank">Angular</a> 開發的模組集合. 雖然不需要知道Angular 框架也可以建立你第一個 Nebular 專案，但強烈建議先閱讀 Angular 指南並熟悉 Angular 基本概念。</p><hr><h2 id="快速開始指南"><a href="#快速開始指南" class="headerlink" title="快速開始指南"></a>快速開始指南</h2><p>根據你專案目前的設定和你的目標，有兩個起始點: </p><ul><li><strong><a href="/3.akveo-nebular-install-starter-kit/">從 Nebular Admin 入門套件開始</a></strong> 如果你正在建立管理員儀表板或是任何後台應用程式以及你需要一個模板作為一個好的入門套件，可以考慮這個指南。</li><li><strong><a href="/4.akveo-nebular-install-into-existing/">安裝 nebular 到現有專案</a></strong> 如果你已經有一些 Angular 程式碼，可以參考這個指南，它解釋如何使用 Nebular。</li></ul><p>如果你的使用案例沒有在上述，請在 Github 建立一個 issue。但我們懇請先查閱文件和現有 issue 的列表。   </p><h2 id="我是-Angular-或是-Web-開發新手"><a href="#我是-Angular-或是-Web-開發新手" class="headerlink" title="我是 Angular 或是 Web 開發新手"></a>我是 Angular 或是 Web 開發新手</h2><p>我們經常收到對軟體工程或是 Angular 完全陌生的人的郵件或是訊息，要求我們提供建議。<br>Well，不幸的是，我們無法提供通用的方法，每個建議都針對特定的人和他目前擁有的技能和目的，這是為什麼我們相信每個人更了解自己。<br>有很多線上教育課程提供許多資源像是 <a href="https://www.udemy.com/angular-zero/?couponCode=ANGULAR.IO、https://www.coursera.org/、https://egghead.io/。" target="_blank" rel="noopener">https://www.udemy.com/angular-zero/?couponCode=ANGULAR.IO、https://www.coursera.org/、https://egghead.io/。</a> </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;原文：&lt;a href=&quot;https://akveo.github.io/nebular/docs/getting-started/where-to-start#where-to-start&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ak
+      
+    
+    </summary>
+    
+    
+      <category term="angular" scheme="https://pickonefish.github.io/tags/angular/"/>
+    
+      <category term="akveo/nebular" scheme="https://pickonefish.github.io/tags/akveo-nebular/"/>
+    
+      <category term="ngx-admin" scheme="https://pickonefish.github.io/tags/ngx-admin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ANGULAR | akveo/nebular 系列 - 1.1. 什麼是 Nebular | 中文</title>
+    <link href="https://pickonefish.github.io/index/"/>
+    <id>https://pickonefish.github.io/index/</id>
+    <published>2018-07-11T03:26:35.000Z</published>
+    <updated>2021-11-04T13:10:11.642Z</updated>
+    
+    <content type="html"><![CDATA[<p>Github：<a href="https://github.com/akveo/nebular" target="_blank" rel="noopener">https://github.com/akveo/nebular</a><br>原文：<a href="https://akveo.github.io/nebular/docs/getting-started/what-is-nebular" target="_blank" rel="noopener">https://akveo.github.io/nebular/docs/getting-started/what-is-nebular</a></p><h1 id="什麼是-Nebular"><a href="#什麼是-Nebular" class="headerlink" title="什麼是 Nebular"></a>什麼是 Nebular</h1><blockquote><p>Nebular 是你下一個 Angular 應用程式的基礎模組集。這些模組的目的是更快更有效率地解決你的通用任務，以便你更專注於業務邏輯並把常規任務拋在後面。</p></blockquote><ol><li><p>Nebular Theme <code>@nebular/theme</code></p><ul><li>主題系統 - SCSS 規則集，允許你使用客製化的樣式和修改變數以調整應用程式的產品外觀。</li><li>UI 套件- 包含三種樣式主題的純 Angular 元件，沒有第三方相依。</li><li>覆寫 Bootstrap 樣式使應用程式有一致性的產品外觀。</li><li>伺服器端渲染兼容性。</li><li>所有的元件都支援由右向左的書寫系統 (如阿拉伯語系)</li></ul></li><li><p>Nebular Auth <code>@nebular/auth</code></p><ul><li>認證元件（登入/註冊/重置密碼/請求密碼）。</li><li>多種可配置身分驗證的策略（後端連結器）。</li><li>多種針對「通行許可證（token）」管理的小幫手（透過 HTTP request 儲存和傳輸通行許可證）。</li></ul></li><li><p>Nebular Security <code>@nebular/security</code></p><ul><li>模組針對角色以及權限管理</li></ul></li><li><p>儀表板管理入門套件 <a href="https://github.com/akveo/ngx-admin" target="_blank" rel="noopener"><code>ngx-admin</code></a> - 以 Nebular 模組為基礎的 Angular 應用程式，有漂亮的 IoT 儀表元件</p></li></ol><h1 id="其他想法"><a href="#其他想法" class="headerlink" title="其他想法"></a>其他想法</h1><ol><li><code>@nebular/dashboard</code> -針對儀表板建置，可拖拉 、調整大小的模組。</li><li><code>@nebular/data</code> - 應用程式資料與狀態的管理</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Github：&lt;a href=&quot;https://github.com/akveo/nebular&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/akveo/nebular&lt;/a&gt;&lt;br&gt;原文：&lt;a href=&quot;http
       
     
     </summary>
