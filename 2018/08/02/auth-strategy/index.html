@@ -1,0 +1,685 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="原文：https:&#x2F;&#x2F;akveo.github.io&#x2F;nebular&#x2F;docs&#x2F;auth&#x2F;configuring-a-strategy#strategy 認證策略在 Nebular 中的詞彙 認證策略 Auth Strategy 是一個為一些特定的認證流程（像是 email&#x2F;password、OAuth2 等流程）依認證邏輯而設計的類別。它接受使用者的輸入（login&#x2F;emai">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ANGULAR | akveo&#x2F;nebular 系列 - 6.3. 配置認證策略 | 中文">
+<meta property="og:url" content="http://example.com/2018/08/02/auth-strategy/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="原文：https:&#x2F;&#x2F;akveo.github.io&#x2F;nebular&#x2F;docs&#x2F;auth&#x2F;configuring-a-strategy#strategy 認證策略在 Nebular 中的詞彙 認證策略 Auth Strategy 是一個為一些特定的認證流程（像是 email&#x2F;password、OAuth2 等流程）依認證邏輯而設計的類別。它接受使用者的輸入（login&#x2F;emai">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-08-02T01:53:35.000Z">
+<meta property="article:modified_time" content="2021-11-04T13:10:11.642Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="angular">
+<meta property="article:tag" content="akveo&#x2F;nebular">
+<meta property="article:tag" content="ngx-admin">
+<meta property="article:tag" content="auth">
+<meta property="article:tag" content="oauth">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>ANGULAR | akveo/nebular 系列 - 6.3. 配置認證策略 | 中文 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Chien Yu Wei</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://github.com/pickonefish">
+                <i class="iconfont icon-user-fill"></i>
+                <span>GITHUB</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="ANGULAR | akveo/nebular 系列 - 6.3. 配置認證策略 | 中文"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2018-08-02 09:53" pubdate>
+          August 2, 2018 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.5k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          21 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">ANGULAR | akveo/nebular 系列 - 6.3. 配置認證策略 | 中文</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>原文：<a target="_blank" rel="noopener" href="https://akveo.github.io/nebular/docs/auth/configuring-a-strategy#strategy">https://akveo.github.io/nebular/docs/auth/configuring-a-strategy#strategy</a></p>
+<h1 id="認證策略"><a href="#認證策略" class="headerlink" title="認證策略"></a>認證策略</h1><p>在 Nebular 中的詞彙 <code>認證策略 Auth Strategy</code> 是一個為一些特定的認證流程（像是 email&#x2F;password、OAuth2 等流程）依認證邏輯而設計的類別。<br>它接受使用者的輸入（login&#x2F;email&#x2F;password&#x2F;token 等…)，將輸入傳遞給後端 API 並將輸出結果提供給認證 UI 層。<br>目前，有兩個認證策略可用：</p>
+<ul>
+<li><code>NbDummyAuthStrategy</code> - 為了測試目的的簡單策略，當 API 還在開發階段時可以用於模擬後端的回應。</li>
+<li><code>NbPasswordAuthStrategy</code> - 最常見的 email&#x2F;login&#x2F;password 認證策略。</li>
+</ul>
+<p>每一個策略有一個擁有預設值的配置清單可用，但你可以根據自己的需求調整配置。</p>
+<hr>
+  
+<h2 id="認證策略配置"><a href="#認證策略配置" class="headerlink" title="認證策略配置"></a>認證策略配置</h2><p>一個例子，讓我們為 <code>NbPasswordAuthStrategy</code> 配置 API 端口。這個策略是被預設配置的，如果您需要任何客製化的做法，請參閱 <a target="_blank" rel="noopener" href="https://akveo.github.io/nebular/docs/auth/nbpasswordauthstrategy#nbpasswordauthstrategy">預設配置的設定值</a> 。<br>我們假設您已經安裝「認證模組」在您的 <code>*.module.ts</code> 檔案:</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs ts"><br><span class="hljs-meta">@NgModule</span>(&#123;<br>  <span class="hljs-attr">imports</span>: [<br>   <span class="hljs-comment">// ...</span><br>    <br>   <span class="hljs-title class_">NbAuthModule</span>.<span class="hljs-title function_">forRoot</span>(&#123;<br>         <span class="hljs-attr">strategies</span>: [<br>           <span class="hljs-title class_">NbPasswordAuthStrategy</span>.<span class="hljs-title function_">setup</span>(&#123;<br>             <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;email&#x27;</span>,<br>           &#125;),<br>         ],<br>         <span class="hljs-attr">forms</span>: &#123;&#125;,<br>       &#125;), <br>  ],<br>&#125;);<br><br></code></pre></td></tr></table></figure>
+<p><code>email</code> 這是我們分配給「策略」的別名，以便我們以後可以動態的提到它。這也允許我們在一個應用程式中配置多個策略。</p>
+<hr>
+
+<h2 id="設定-API-配置"><a href="#設定-API-配置" class="headerlink" title="設定 API 配置"></a>設定 API 配置</h2><p>現在我們加入一個 API 端口。根據 <a target="_blank" rel="noopener" href="https://akveo.github.io/nebular/docs/auth/nbpasswordauthstrategy#nbpasswordauthstrategy">NbPasswordAuthStrategy documentation</a>，每一個 function （登入&#x2F;註冊等…）我們有一個 <code>baseEndpoint</code> 設定以及一個 <code>endpoint</code> 設定：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs ts"><br><span class="hljs-meta">@NgModule</span>(&#123;<br>  <span class="hljs-attr">imports</span>: [<br>   <span class="hljs-comment">// ...</span><br>    <br>   <span class="hljs-title class_">NbAuthModule</span>.<span class="hljs-title function_">forRoot</span>(&#123;<br>         <span class="hljs-attr">strategies</span>: [<br>           <span class="hljs-title class_">NbPasswordAuthStrategy</span>.<span class="hljs-title function_">setup</span>(&#123;<br>             <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;email&#x27;</span>,<br>            <br>             <span class="hljs-attr">baseEndpoint</span>: <span class="hljs-string">&#x27;&#x27;</span>,<br>              <span class="hljs-attr">login</span>: &#123;<br>                <span class="hljs-comment">// ...</span><br>                <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/api/auth/login&#x27;</span>,<br>              &#125;,<br>              <span class="hljs-attr">register</span>: &#123;<br>                <span class="hljs-comment">// ...</span><br>                <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/api/auth/register&#x27;</span>,<br>              &#125;,<br>           &#125;),<br>         ],<br>         <span class="hljs-attr">forms</span>: &#123;&#125;,<br>       &#125;), <br>  ],<br>&#125;);<br></code></pre></td></tr></table></figure>
+
+<p>假設我們的 API 位於獨立的伺服器上 <code>http://example.com/app-api/v1</code> 於是修改 <code>baseEndpoint</code> ：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs ts">&#123;<br> <span class="hljs-comment">// ...</span><br> <span class="hljs-attr">baseEndpoint</span>: <span class="hljs-string">&#x27;http://example.com/app-api/v1&#x27;</span>,<br> <span class="hljs-comment">// ...</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>並且配置其端口，請考慮到最終端口將包含 <code>baseEndpoint + method.endpoint</code>:</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs ts">&#123;<br>  <span class="hljs-attr">baseEndpoint</span>: <span class="hljs-string">&#x27;http://example.com/app-api/v1&#x27;</span>,<br>  <span class="hljs-attr">login</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/sign-in&#x27;</span>,<br>  &#125;,<br>  <span class="hljs-attr">register</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/sign-up&#x27;</span>,<br>  &#125;,<br>  <span class="hljs-attr">logout</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/sign-out&#x27;</span>,<br>  &#125;,<br>  <span class="hljs-attr">requestPass</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/request-pass&#x27;</span>,<br>  &#125;,<br>  <span class="hljs-attr">resetPass</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/reset-pass&#x27;</span>,<br>  &#125;,<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>最後，我們假設與預設策略不同，我們的 API 僅接受 <code>HTTP POST</code>，所我們加上 <code>method</code> 解決這個問題：</p>
+<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs ts">&#123;<br>  <span class="hljs-attr">baseEndpoint</span>: <span class="hljs-string">&#x27;http://example.com/app-api/v1&#x27;</span>,<br>  <span class="hljs-attr">login</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/sign-in&#x27;</span>,<br>    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;post&#x27;</span>,<br>  &#125;,<br>  <span class="hljs-attr">register</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/sign-up&#x27;</span>,<br>    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;post&#x27;</span>,<br>  &#125;,<br>  <span class="hljs-attr">logout</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/sign-out&#x27;</span>,<br>    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;post&#x27;</span>,<br>  &#125;,<br>  <span class="hljs-attr">requestPass</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/request-pass&#x27;</span>,<br>    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;post&#x27;</span>,<br>  &#125;,<br>  <span class="hljs-attr">resetPass</span>: &#123;<br>    <span class="hljs-attr">endpoint</span>: <span class="hljs-string">&#x27;/auth/reset-pass&#x27;</span>,<br>    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;post&#x27;</span>,<br>  &#125;,<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>注意</strong><br>不須要在此列出所有的配置。您的設定將相對應地與預設策略的設定合併。</p>
+</blockquote>
+<p>太好了！經過這些簡單的步驟，您針對 API 後端正確地配置身份認證層。</p>
+<hr>
+
+<h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul>
+<li><a href="/auth-ui">調整認證元件 UI</a></li>
+<li><a href="/auth-token">接收認證後的使用者通行證</a></li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/angular/">#angular</a>
+      
+        <a href="/tags/akveo-nebular/">#akveo/nebular</a>
+      
+        <a href="/tags/ngx-admin/">#ngx-admin</a>
+      
+        <a href="/tags/auth/">#auth</a>
+      
+        <a href="/tags/oauth/">#oauth</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>ANGULAR | akveo/nebular 系列 - 6.3. 配置認證策略 | 中文</div>
+      <div>http://example.com/2018/08/02/auth-strategy/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>August 2, 2018</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2018/08/02/auth-ui/" title="ANGULAR | akveo/nebular 系列 - 6.4. 認證 UI 元件 | 中文">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ANGULAR | akveo/nebular 系列 - 6.4. 認證 UI 元件 | 中文</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2018/08/02/auth-install/" title="ANGULAR | akveo/nebular 系列 - 6.2. 安裝安全延伸模組 | 中文">
+                        <span class="hidden-mobile">ANGULAR | akveo/nebular 系列 - 6.2. 安裝安全延伸模組 | 中文</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

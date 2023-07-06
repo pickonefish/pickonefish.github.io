@@ -1,0 +1,711 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="原文：https:&#x2F;&#x2F;akveo.github.io&#x2F;nebular&#x2F;docs&#x2F;guides&#x2F;enable-theme-system#advanced-setup 啟用主題系統 注意如果您使用我們的 ngx-admin 入門套件 那麼您已經有了進階設定。  基礎設定當：你只須要 Nebular 提供的預設樣式（宇宙樣式 cosmic 或是預設樣式 default），且不打算使用變數或是「熱載 ho">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ANGULAR | akveo&#x2F;nebular 系列 - 2.4. 啟用主題系統 | 中文">
+<meta property="og:url" content="http://example.com/2018/08/01/enabling-theme-system/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="原文：https:&#x2F;&#x2F;akveo.github.io&#x2F;nebular&#x2F;docs&#x2F;guides&#x2F;enable-theme-system#advanced-setup 啟用主題系統 注意如果您使用我們的 ngx-admin 入門套件 那麼您已經有了進階設定。  基礎設定當：你只須要 Nebular 提供的預設樣式（宇宙樣式 cosmic 或是預設樣式 default），且不打算使用變數或是「熱載 ho">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/assets/images/articles/blue-theme.png">
+<meta property="og:image" content="http://example.com/assets/images/articles/dark-theme.png">
+<meta property="article:published_time" content="2018-08-01T02:19:15.000Z">
+<meta property="article:modified_time" content="2021-11-04T13:10:11.642Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="angular">
+<meta property="article:tag" content="akveo&#x2F;nebular">
+<meta property="article:tag" content="ngx-admin">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/assets/images/articles/blue-theme.png">
+  
+  
+  
+  <title>ANGULAR | akveo/nebular 系列 - 2.4. 啟用主題系統 | 中文 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Chien Yu Wei</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>Home</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>Archives</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>Tags</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>About</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://github.com/pickonefish">
+                <i class="iconfont icon-user-fill"></i>
+                <span>GITHUB</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="ANGULAR | akveo/nebular 系列 - 2.4. 啟用主題系統 | 中文"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2018-08-01 10:19" pubdate>
+          August 1, 2018 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.2k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          27 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">ANGULAR | akveo/nebular 系列 - 2.4. 啟用主題系統 | 中文</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>原文：<a target="_blank" rel="noopener" href="https://akveo.github.io/nebular/docs/guides/enable-theme-system#advanced-setup">https://akveo.github.io/nebular/docs/guides/enable-theme-system#advanced-setup</a></p>
+<h1 id="啟用主題系統"><a href="#啟用主題系統" class="headerlink" title="啟用主題系統"></a>啟用主題系統</h1><blockquote>
+<p><strong>注意</strong><br>如果您使用我們的 <a href="install-starter-kit">ngx-admin 入門套件</a> 那麼您已經有了進階設定。</p>
+</blockquote>
+<h2 id="基礎設定"><a href="#基礎設定" class="headerlink" title="基礎設定"></a>基礎設定</h2><p><strong>當</strong>：你只須要 Nebular 提供的預設樣式（宇宙樣式 cosmic 或是預設樣式 default），且不打算使用變數或是「熱載 hot-reload」 支援。</p>
+<ol>
+<li>那麼您只須要加入一個你想要使用的主題的 CSS 檔案到 <code>.angular-cli.json</code> 檔案像是:</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs scss">&quot;styles&quot;: [<br>        <span class="hljs-string">&quot;../node_modules/@nebular/theme/styles/prebuilt/cosmic.css&quot;</span>, // 或是 default.css<br>      ],<br><br></code></pre></td></tr></table></figure>
+<p>就這樣！ 未來，如果您須要進階功能您可以簡單地從「一般設定步驟」或是「進階設定步驟」開始使用主題。</p>
+<hr>
+
+<h2 id="一般設定"><a href="#一般設定" class="headerlink" title="一般設定"></a>一般設定</h2><p><strong>當</strong>：您希望在您的程式碼中使用主題系統並且能夠更改變數時。</p>
+<p><em>注意</em>：這個設定可能看起來有點冗長，遺憾的是 angular-cli 對客製化配置的支援有限；希望未來的版本和外掛支援可以大大簡化。</p>
+<ol>
+<li>使用 Nebular 主題宣告建立一個 <code>themes.scss</code> 檔案。我們假設這個主題是以 <code>default</code> 主題為基礎，所以依然命名為 <code>default</code>。</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs scss"><span class="hljs-comment">// 匯入 Nebular 主題系統以及 default 主題</span><br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;~@nebular/theme/styles/theming&#x27;</span>;<br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;~@nebular/theme/styles/themes/default&#x27;</span>;<br><br><span class="hljs-comment">// 改變你想要改變的變數或是不設定變數而保留預設值。預設值為白色，讓我們把它變成藍色。</span><br><span class="hljs-variable">$nb-themes</span>: <span class="hljs-built_in">nb-register-theme</span>((<br>  color-bg: <span class="hljs-number">#4ca6ff</span>,<br>  shadow: <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> <span class="hljs-number">#3780c0</span>,<br>  layout-bg: <span class="hljs-number">#ffffff</span>,<br>  color-fg: <span class="hljs-number">#222222</span><br>), default, default); <br><span class="hljs-comment">// 第一個 default 為新主題的名稱；第二 default 為以 Nebular 提供的 default 主題為基礎。</span><br><br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>現在找到您的 <code>styles.scss</code> (或者建立一個然後加入到 <code>.angular-cli.json</code> 的 <code>&quot;styles&quot;: [..]</code> 之下) 並且根據以下程式碼貼上：</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs scss"><span class="hljs-comment">// 這是您建立的 themes.scss 檔，請確認路徑正確</span><br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;themes&#x27;</span>;<br><br><span class="hljs-comment">// 框架的元件樣式將使用您的新主題</span><br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;~@nebular/theme/styles/globals&#x27;</span>;<br><br><span class="hljs-comment">// 安裝框架</span><br><span class="hljs-keyword">@include</span> nb-install() &#123;<br>  <span class="hljs-keyword">@include</span> nb-theme-global();<br>&#125;;<br><br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在這個步驟，您已經可以自訂變數以變更元件的外觀與行為。為了能夠將這些（或是新的） 變數使用於客製化的元件中，只需要在任何 <code>*.component.scss</code> 中加入一行 <code>import</code> 。</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs scss"><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;../../../@theme/styles/themes&#x27;</span>;<br><br><span class="hljs-selector-pseudo">:host</span> &#123;<br><br>  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">nb-theme</span>(card-bg); <span class="hljs-comment">// 然後使用這個主題</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>注意</strong><br>只需要呼叫 <code>nb-theme(variable-name)</code> 函數即可存取變數.</p>
+</blockquote>
+<p>這個步驟您將得到類似下圖的內容：</p>
+<p><img src="/assets/images/articles/blue-theme.png" srcset="/img/loading.gif" lazyload alt="image"></p>
+<hr>
+
+<h2 id="進階設定"><a href="#進階設定" class="headerlink" title="進階設定"></a>進階設定</h2><p><strong>當</strong>：您須要在 run-time 時在多個主題中切換主題時</p>
+<p>這個步驟假設您已經完成 <em>一般設定</em> 步驟.</p>
+<ol>
+<li>假設您已經有一個來自前一個步驟產生的 <code>default</code> 主題的 <code>themes.scss</code> 檔案，讓我們加入一個新的主題，以 Nebular 的 <code>cosmic</code> 主題為基礎並且命名為 <code>dark</code>:</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs scss">...<br><br><span class="hljs-comment">// 加上 cosmic 主題 import 在原有的 default 主題之下;</span><br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;~@nebular/theme/styles/themes/cosmic&#x27;</span>;<br><br><span class="hljs-comment">// 並將兩個主題都標記為啟用</span><br><span class="hljs-variable">$nb-enabled-themes</span>: (default, dark);<br><br>...<br><br><span class="hljs-comment">// 改變你想要改變的變數或是不設定變數而保留預設值。預設值為宇宙色，讓我們把它變成黑暗色。</span><br><span class="hljs-variable">$nb-themes</span>: <span class="hljs-built_in">nb-register-theme</span>((<br><br>  color-bg: <span class="hljs-number">#222222</span>,<br>  shadow: <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> <span class="hljs-number">#000000</span>,<br>  color-fg: <span class="hljs-number">#303030</span>,<br>  layout-bg: <span class="hljs-number">#ededed</span>,<br>), dark, cosmic);<br></code></pre></td></tr></table></figure>
+
+<p>所以您的 <code>themes.scss</code> 檔案會看起來是：</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs scss"><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;~@nebular/theme/styles/theming&#x27;</span>;<br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;~@nebular/theme/styles/themes/default&#x27;</span>;<br><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;~@nebular/theme/styles/themes/cosmic&#x27;</span>;<br><br><span class="hljs-variable">$nb-enabled-themes</span>: (default, dark);<br><br><span class="hljs-comment">// default 主題</span><br><span class="hljs-variable">$nb-themes</span>: <span class="hljs-built_in">nb-register-theme</span>((<br><br>  color-bg: <span class="hljs-number">#4ca6ff</span>,<br>  shadow: <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> <span class="hljs-number">#3780c0</span>,<br>  layout-bg: <span class="hljs-number">#ffffff</span>,<br>  color-fg: <span class="hljs-number">#222222</span>,<br>), default, default);<br><br><br><span class="hljs-comment">// dark 主題</span><br><span class="hljs-variable">$nb-themes</span>: <span class="hljs-built_in">nb-register-theme</span>((<br><br>  color-bg: <span class="hljs-number">#222222</span>,<br>  shadow: <span class="hljs-number">0</span> <span class="hljs-number">1px</span> <span class="hljs-number">2px</span> <span class="hljs-number">0</span> <span class="hljs-number">#000000</span>,<br>  color-fg: <span class="hljs-number">#303030</span>,<br>  layout-bg: <span class="hljs-number">#ededed</span>,<br>), dark, cosmic);<br><br></code></pre></td></tr></table></figure>
+
+<p>此時啟用您的 <code>dark</code> 主題您的頁面會看起來像是：</p>
+<p><img src="/assets/images/articles/dark-theme.png" srcset="/img/loading.gif" lazyload alt="image"></p>
+<ol start="2">
+<li>現在啟用「熱載　<code>hot reload</code>」的魔術，打包您所有含有 <code>nb-install-component</code> 的 <code>*.component.scss</code> 樣式 像是：</li>
+</ol>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs scss"><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;../../../@theme/styles/themes&#x27;</span>;<br><br><span class="hljs-keyword">@include</span> nb-install-component() &#123;<br>  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">nb-theme</span>(card-bg); <span class="hljs-comment">// 對於每一個被註冊的主題鑲嵌相對應的值</span><br>  <br>  <span class="hljs-selector-class">.container</span> &#123;<br>    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">nb-theme</span>(color-bg);<br>    <span class="hljs-attribute">font-weight</span>: <span class="hljs-built_in">nb-theme</span>(font-weight-bold);<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p><strong>注意</strong><br>這個 <strong>install-component</strong> SCSS mixin ‘已經涵蓋了’ 宣告在程式碼中的 <strong>:host</strong>，意思是你不需要在 <strong>@include nb-install-component() {</strong> 中而外宣告一個 <strong>:host</strong> 並且樣式也會正確的渲染到這個 <code>host</code>。</p>
+</blockquote>
+<p>完成，你可以在 run-time 時改變主題。以下是如何從元件中執行這個操作：</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs scss"><span class="hljs-comment">// 使用主題服務</span><br><span class="hljs-built_in">constructor</span>(private themeService: NbThemeService) &#123;<br>&#125;<br><br><span class="hljs-comment">// 改變成 `dark`</span><br><span class="hljs-built_in">enableDarkTheme</span>() &#123;<br>  this<span class="hljs-selector-class">.themeService</span><span class="hljs-selector-class">.changeTheme</span>(&#x27;dark&#x27;);<br>&#125;<br></code></pre></td></tr></table></figure>
+<hr>
+
+<h2 id="相關文章"><a href="#相關文章" class="headerlink" title="相關文章"></a>相關文章</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://akveo.github.io/nebular/docs/guides/theme-system">Theme System Concepts</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://akveo.github.io/nebular/docs/themes/default">Default Theme variables table</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://akveo.github.io/nebular/docs/themes/cosmic">Cosmic Theme variables table</a>.</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/angular/">#angular</a>
+      
+        <a href="/tags/akveo-nebular/">#akveo/nebular</a>
+      
+        <a href="/tags/ngx-admin/">#ngx-admin</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>ANGULAR | akveo/nebular 系列 - 2.4. 啟用主題系統 | 中文</div>
+      <div>http://example.com/2018/08/01/enabling-theme-system/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>August 1, 2018</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2018/08/01/auth-intro/" title="ANGULAR | akveo/nebular 系列 - 6.1. 認證模組 | 中文">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ANGULAR | akveo/nebular 系列 - 6.1. 認證模組 | 中文</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2018/07/30/concept-theme-system/" title="ANGULAR | akveo/nebular 系列 - 2.3. Nebular 主題系統 | 中文">
+                        <span class="hidden-mobile">ANGULAR | akveo/nebular 系列 - 2.3. Nebular 主題系統 | 中文</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
